@@ -7,7 +7,7 @@ _Dice-Indexed Passphrase Word List in Hungarian, created by Soma Lucz ([https://
 
 ## What is Diceware?
 
-[Diceware](https://theworld.com/~reinhold/diceware.html) is a method for picking secure but easy-to-remember passphrases. It selects words from a purpose-built Diceware word list randomly, using dice. The list is indexed by five-digit numbers, all digits being between one and six: the outcomes of five dice rolls select a word from the list for the passphrase.
+[Diceware](https://theworld.com/~reinhold/diceware.html) is a method for picking secure but easy-to-remember passphrases. It selects words from a purpose-built Diceware word list randomly, using dice. The list is indexed by five-digit numbers, all digits being between one and six: the outcome of five dice rolls selects a word from the list for the passphrase.
 
 ## Why is it secure?
 
