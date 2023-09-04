@@ -39,7 +39,7 @@ Reasons why I consider Diceware a secure password generation method:
 
 4. Make sure that the number of total letters in the six found words is at least the corresponding number in the table below. See The Math section for why this is important.
 
-5. Your new passphrase is the six words you found, separated by spaces. It is indeed important to separate the words by spaces, otherwise the passphrase can become weaker due to possible redundancy amongst the words. As long as you will still remember it, you can make the passphrase even more secure by adding non-alphabetic characters, or by replacing some lowercase letters with their uppercase variants. Memorize the passphrase well, then destroy the paper you wrote the results on. (You can also hide the paper in a safe place.)
+5. Your new passphrase is the six words you found, separated by spaces. It is indeed important to separate the words, otherwise the passphrase can become weaker due to possible redundancy amongst the words. As long as you will still remember it, you can make the passphrase even more secure by adding non-alphabetic characters, or by replacing some lowercase letters with their uppercase variants. Memorize the passphrase well, then destroy the paper you wrote the results on. (You can also hide the paper in a safe place.)
 
 | Diceware words | Minimum letter count<br />when using accented letters | Minimum letter count<br />when not using accented letters |
 | -------------- | ----------------------------------------------------- | --------------------------------------------------------- |
