@@ -25,40 +25,46 @@ Reasons why I consider Diceware a secure password generation method:
 
 - Diceware produces passphrases that are easy to remember.
 
-- The math behind Diceware is sound. See The Math section for details.
+- The math behind Diceware is sound. See “The Math” section for details.
 
 ## How to use it?
 
-0. You will need one or more dice. I strongly advise against using online or electronic Diceware tools, because it eradicates two important security properties of the Diceware method. For maximizing security, it is best if you have a hard copy of the Diceware word list, so your word lookups cannot be spied on electronically.
+0. **You will need one or more dice.** I strongly advise against using online or electronic Diceware tools, because it eradicates two important security properties of the Diceware method. For maximizing security, it is best if you have a hard copy of the Diceware word list, so your word lookups cannot be spied on electronically.
 
-1. Decide how many words you want in your passphrase. A five-word passphrase provides a level of security much higher than the simple passwords most people use. A minimum of six words is recommended as a password manager’s master password, but for this I most likely would go for an eight- or ten-word passphrase. You can go up to twenty words for less frequent usage or for protecting higher-value data. (Since using twenty Diceware words in your passphrase results its security level being already a little more than a 256-bit symmetric key’s, it doesn't really make sense to go further. See The Math section below for more information.)
+1. **Decide how many words you want in your passphrase.** A five-word passphrase provides a level of security much higher than the simple passwords most people use. A minimum of six words is recommended as a password manager’s master password, but for this I most likely would go for an eight- or ten-word passphrase. You can go up to twenty words for less frequent usage or for protecting higher-value data. (Since using twenty Diceware words in your passphrase results its security level being already a little more than a 256-bit symmetric key’s, it doesn't really make sense to go further. See “The Math” section below for more information.)
 
-2. Let us say you decided on a six-word passphrase. For that, you need 6 \* 5 = 30 numbers between one and six, meaning thirty dice rolls altogether. You can roll one die thirty times, roll thirty dice once, or any combination in between; but make sure to shake the di(c)e vigorously beforehand. If you roll several dice at a time, read them from left to right. Write down the results of the thirty dice rolls in groups of five, on a piece of paper; it is best not to use electronics for recording the results.
+2. **Let us say you decided on a six-word passphrase. For that, you need 6 \* 5 = 30 numbers between one and six, meaning thirty dice rolls altogether.** You can roll one die thirty times, thirty dice simultaneously, or any combination in between; but make sure to shake the di(c)e vigorously beforehand. If you roll several dice at a time, read them from left to right. Write down the results of the thirty dice rolls in groups of five, on a piece of paper; it is best not to use electronics for recording the results.
 
-3. Look up each five-digit number you wrote down in the Diceware word list and read its corresponding word. For example, 25341 means your next passphrase word would be “TODO”. To make it easier to type in the passphrase on various keyboard layouts, you can substitute accented letters with their accent-free variants — you can do this without sacrificing security, see the next step.
+3. **Look up each five-digit number you wrote down in the Diceware word list and read its corresponding word.** For example, 25341 means your next passphrase word would be “TODO”.
 
-4. Make sure that the number of total letters in the six found words is at least the corresponding number in the table below. See The Math section for why this is important.
+4. **I advise that you substitute accented letters with their accent-free variants in the words you found.** Many applications handle passwords containing non-ASCII characters terribly wrongly; even if they get it right, your password might still not work due to (maybe OS-level) differences in character encoding, Unicode normalization, etc. Also, you should be able to type in your passphrase using any keyboard layout. Using accent-free letters does not mean sacrificing security; see the next step.
 
-5. Your new passphrase is the six words you found, separated by spaces. It is indeed important to separate the words, otherwise the passphrase can become weaker due to possible redundancy amongst the words. As long as you will still remember it, you can make the passphrase even more secure by adding non-alphabetic characters, or by replacing some lowercase letters with their uppercase variants. Memorize the passphrase well, then destroy the paper you wrote the results on. (You can also hide the paper in a safe place.)
+5. **Make sure that the number of total letters in the six found words is at least the corresponding number in the table below.** See “The Math” section for why this is important.
 
-| Diceware words | Minimum letter count<br />when using accented letters | Minimum letter count<br />when not using accented letters |
-| -------------- | ----------------------------------------------------- | --------------------------------------------------------- |
-| 5              |                                                       |                                                           |
-| 6              |                                                       |                                                           |
-| 7              |                                                       |                                                           |
-| 8              |                                                       |                                                           |
-| 9              |                                                       |                                                           |
-| 10             |                                                       |                                                           |
-| 11             |                                                       |                                                           |
-| 12             |                                                       |                                                           |
-| 13             |                                                       |                                                           |
-| 14             |                                                       |                                                           |
-| 15             |                                                       |                                                           |
-| 16             |                                                       |                                                           |
-| 17             |                                                       |                                                           |
-| 18             |                                                       |                                                           |
-| 19             |                                                       |                                                           |
-| 20             |                                                       |                                                           |
+6. **Your new passphrase is the six words you found, separated by spaces.** Separation is indeed important, otherwise the passphrase can become weaker due to possible redundancy amongst the words.
+
+7. **You can decorate your passphrase if you want.** As long as you will still remember it, you can make the passphrase even more secure by replacing some lowercase letters with their uppercase variants, by adding non-alphabetic characters, or by using characters other than space for word separators. However, I advise that you only use ASCII characters in your passphrase; see step 4.
+
+8. **Memorize the passphrase well, then destroy the paper you wrote the results on.** Or you can also hide the paper in a safe place.
+
+| Diceware words | Minimum total letter count<br />when using accented letters | Minimum total letter count<br />when not using accented letters |
+| -------------- | ----------------------------------------------------------- | --------------------------------------------------------------- |
+| 5              |                                                             |                                                                 |
+| 6              |                                                             |                                                                 |
+| 7              |                                                             |                                                                 |
+| 8              |                                                             |                                                                 |
+| 9              |                                                             |                                                                 |
+| 10             |                                                             |                                                                 |
+| 11             |                                                             |                                                                 |
+| 12             |                                                             |                                                                 |
+| 13             |                                                             |                                                                 |
+| 14             |                                                             |                                                                 |
+| 15             |                                                             |                                                                 |
+| 16             |                                                             |                                                                 |
+| 17             |                                                             |                                                                 |
+| 18             |                                                             |                                                                 |
+| 19             |                                                             |                                                                 |
+| 20             |                                                             |                                                                 |
 
 ## Hungarian Diceware list versions
 
@@ -218,15 +224,15 @@ As seen above, a password of high entropy can be the result of two factors:
 - a large symbol set,
 - using many of those symbols in the password.
 
-Diceware operates with a large symbol set: its symbols are the 7,776 words on a Diceware word list. In contrast, a case-sensitive Latin alphanumeric password uses a symbol set that only has 62 elements (26 lower- and 26 uppercase letters, and 10 numbers). With its large symbol set, Diceware can produce high-entropy passwords while using less symbols (words) in them.
+Diceware operates with a large symbol set: its symbols are the 7,776 words on a Diceware word list. In contrast, a case-sensitive Latin alphanumeric password uses a symbol set that only has 62 elements (26 lower- and 26 uppercase letters, and 10 numbers). With its large symbol set, Diceware can produce high-entropy passwords using less symbols (words).
 
-The minimum letter count requirement follows from the fact that one does not want to lose any security by considering their Diceware passphrase as a string of independent characters present in a particular Diceware word list. That is, one does not want to be less secure if an attacker — in possession of the information that they use Diceware with a particular word list — decides to start brute-force cracking their passphrase not word by word, but character by character. This can be achieved by keeping the passphrase’s “letter-based” per-symbol entropy at least as high as its “word-based” per-symbol entropy.
+The minimum letter count requirement follows from the fact that one does not want to lose any security by considering their Diceware passphrase as a string of independent characters present in a particular Diceware word list. That is, one does not want to be less secure if an attacker — in possession of the information that they use Diceware with a particular word list — decides to start brute-force cracking their passphrase not word by word, but character by character. This can be achieved by keeping the passphrase’s “character-based” per-symbol entropy at least as high as its “word-based” per-symbol entropy.
 
-The “word-based” per-symbol entropy of a Diceware passphrase is H<sub>w</sub> ≈ 12.925 bits. This means that each word in the passphrase needs to contain at least ~12.925 bits of “letter-based” per-symbol entropy as well, in order not to weaken the overall security of the passphrase. Based on the probability distribution of the letters in the Version 2 list, the “letter-based” per-symbol entropy of a passphrase created with the Version 2 list is H<sub>l</sub> = TODO bits in the worst case (neither using spaces in the passphrase nor decorating it with mixed-case letters or non-alphabetic characters). If not using accented characters, the letters’ probability distribution changes, so the “letter-based” per-symbol entropy of a passphrase created this way drops to H<sub>l</sub> = TODO bits in the worst case, and longer passphrases may be required.
+The “word-based” per-symbol entropy of a Diceware passphrase is H<sub>w</sub> ≈ 12.925 bits. This means that each word in the passphrase needs to contain at least ~12.925 bits of “character-based” per-symbol entropy as well, in order not to weaken the overall security of the passphrase. Based on the probability distribution of the letters in the Version 2 list, the “character-based” per-symbol entropy of a passphrase created with the Version 2 list is H<sub>c</sub> = TODO bits in the worst case (neither using word separators in the passphrase nor decorating it with mixed-case letters or non-alphabetic characters). If not using accented characters, the letters’ probability distribution changes, so the “character-based” per-symbol entropy of a passphrase created this way drops to H<sub>c</sub> = TODO bits in the worst case, and longer passphrases may be needed.
 
-With a Diceware passphrase containing W words, the passphrase’s minimum number of letters L, needed to achieve at least the same “letter-based” entropy as the “word-based” entropy H = W \* H<sub>w</sub> of the passphrase, is given by the formula L = ceil(W \* H<sub>w</sub> / H<sub>l</sub>), where ceil denotes the mathematical ceiling function, i.e., rounding up to the next largest whole number. Values of L for 5 <= W <= 20 with H<sub>l</sub> = TODO (using accented characters) and H<sub>l</sub> = TODO (not using accented characters) are summarized in the table in the How to use section.
+With a Diceware passphrase containing W words without separators, the passphrase’s minimum number of letters L, needed to achieve at least the same “character-based” entropy as the “word-based” entropy H = W \* H<sub>w</sub> of the passphrase, is given by the formula L = ceil(W \* H<sub>w</sub> / H<sub>c</sub>), where ceil denotes the mathematical ceiling function, i.e., rounding up to the next largest whole number. Values of L for 5 <= W <= 20 with H<sub>c</sub> = TODO (using accented characters) and H<sub>c</sub> = TODO (not using accented characters) are summarized in the table in the “How to use it?” section.
 
-It is to be noted that the security of a Diceware passphrase can easily be surpassed than demanded by the minimum letter count requirement: one should add additional “character-based” entropy to the passphrase by using mixed-case letters and non-alphabetic characters, and also by using spaces as word separators (even though the main goal of the latter is to prevent redundancy amongst words).
+Note that in practice, using word separator characters alone likely provides enough additional “character-based” entropy not to weaken the overall security of a passphrase otherwise not satisfying the minimum letter count requirement. Nevertheless, one can, and should add additional “character-based” entropy to their passphrase by using mixed-case letters and non-alphabetic characters, further increasing its security.
 
 ## Sources used:
 
