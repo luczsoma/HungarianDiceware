@@ -2,8 +2,8 @@
 
 _Dobókocka-indexelt szólista magyar nyelvű jelmondatok készítéséhez, készítette: Lucz Soma ([https://github.com/luczsoma](https://github.com/luczsoma))_
 
-[![en](https://img.shields.io/badge/lang-en-blue)](https://github.com/luczsoma/HungarianDiceware/blob/master/README.md)
-[![hu](https://img.shields.io/badge/lang-hu-red)](https://github.com/luczsoma/HungarianDiceware/blob/master/README.hu.md)
+[![en](https://img.shields.io/badge/lang-en-blue)](https://github.com/luczsoma/HungarianDiceware/blob/main/README.md)
+[![hu](https://img.shields.io/badge/lang-hu-red)](https://github.com/luczsoma/HungarianDiceware/blob/main/README.hu.md)
 
 ## Mi a Diceware?
 
