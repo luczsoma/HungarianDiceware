@@ -29,7 +29,7 @@ Szerintem a Diceware biztonságos jelszógeneráló módszer, mert:
 
 ## Hogyan használjuk?
 
-0. **Szükségünk lesz egy vagy több dobókockára.** Határozottan nem javaslom online vagy elektronikus Diceware-eszközök használatát, mert ez a Diceware-módszer két fontos biztonsági tulajdonságát is semmissé teszi. A maximális biztonság érdekében jobb, ha kinyomtatjuk a Diceware-szólistát, hogy még a szavak kikeresését se lehessen elektronikusan kifigyelni.
+0. **Szükségünk lesz egy vagy több dobókockára.** Határozottan nem javaslom online vagy elektronikus Diceware-eszközök használatát, mert ezzel a Diceware-módszer két fontos biztonsági jellemzőjét is semlegesítjük. A maximális biztonság érdekében jobb, ha kinyomtatjuk a Diceware-szólistát, hogy még a szavak kikeresését se lehessen elektronikusan kifigyelni.
 
 1. **Döntsük el, hány szóból álljon a jelmondat.** Egy ötszavas jelmondat már sokkal magasabb biztonsági szintet nyújt, mint az általában használt egyszerű jelszavak. Jelszókezelő mesterjelszavaként legalább hat szó ajánlott, bár erre én inkább egy nyolc- vagy tízszavas jelmondatot használnék. Kevésbé gyakori felhasználásra vagy nagyértékű adat védelmére húszszavas jelmondat is készíthető. (Húsz szó használata már valamivel biztonságosabb, mint egy 256 bites szimmetrikus kulcsé, így nem igazán van értelme feljebb menni. További információkért lásd „A Matek” bekezdést.)
 
