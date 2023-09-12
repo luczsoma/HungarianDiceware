@@ -39,7 +39,7 @@ Szerintem a Diceware biztonságos jelszógeneráló módszer, mert:
 
 4. **Ajánlatos lecserélnünk a talált szavakban lévő ékezetes betűket ékezet nélküliekre.** Sok alkalmazás borzasztóan rosszul kezeli a nem ASCII-karaktereket is tartalmazó jelszavakat; de még ha alkalmazásszinten nincs is hiba, sem feltétlenül fog működni a jelszavunk esetleges karakterkódolási, Unicode-normalizálási, stb. különbségek miatt (és ilyeneket okozhat akár eltérő operációs rendszer használata is). Egyébként is célszerű olyan jelszót választani, amit bármilyen billentyűzetkiosztással be tudunk gépelni. Az ékezet nélküli betűk használata nem jelenti, hogy bármit is be kellene áldoznunk a biztonságunkból, de lehet, hogy hosszabb jelmondatra lesz szükségünk; lásd a következő lépést.
 
-5. **Győződjünk meg róla, hogy a hat megtalált szóban lévő betűk száma összesen legalább annyi, mint az alábbi táblázat megfelelő mezőjében.** Ha nem, kezdjük újra a jelmondatkészítést az 1. lépéstől. A minimális összbetűszám okáért lásd „A Matek” bekezdést.
+5. **Győződjünk meg róla, hogy a hat megtalált szóban lévő betűk száma összesen legalább annyi, mint az alábbi táblázat megfelelő mezőjében.** Ha nem, kezdjük újra a jelmondatkészítést az 1. lépéstől. A minimális összbetűszám szükségességének okáért lásd „A Matek” bekezdést.
 
 6. **A kész jelmondatunk a hat megtalált szó, szóközökkel elválasztva.** A szavak elválasztása fontos, enélkül a jelmondatunk gyengébb lehet a szavak közötti esetleges redundancia miatt.
 
