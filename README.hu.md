@@ -43,9 +43,9 @@ Szerintem a Diceware biztonságos jelszógeneráló módszer, mert:
 
 6. **A kész jelmondatunk a hat megtalált szó szóközökkel elválasztva.** A szavak elválasztása fontos, enélkül a jelmondatunk gyengébb lehet a szavak közötti esetleges redundancia miatt.
 
-7. **Igény szerint dekorálhatjuk a jelmondatunkat.** Még biztonságosabbá tehetjük, ha – a könnyű megjegyezhetőség szempontjának megtartásával – néhány kisbetűt nagybetűre cserélünk, hozzáadunk egy-két nem-alfabetikus karaktert, és szóközök helyett más karaktereket is használunk a szavak elválasztására. Ugyanakkor továbbra is ajánlatos csak ASCII-kararktereket használnunk a jelmondatban; lásd a 4. lépést.
+7. **Ha szeretnénk, fel is díszíthetjük a jelmondatunkat.** Még biztonságosabbá tehetjük, ha – a könnyű megjegyezhetőség szempontjának megtartásával – néhány kisbetűt nagybetűre cserélünk, hozzáadunk egy-két nem-alfabetikus karaktert, és szóközök helyett más karaktereket is használunk a szavak elválasztására. Ugyanakkor továbbra is ajánlatos csak ASCII-kararktereket használnunk a jelmondatban; lásd a 4. lépést.
 
-8. **Jegyezzük meg jól a jelmondatot, és semmisítsük meg a papírt, amire az eredményeket írtuk.** Persze el is rejthetjük valami biztonságos helyre.
+8. **Jegyezzük meg jól a jelmondatunkat, és semmisítsük meg a papírt, amire az eredményeket írtuk.** Persze el is rejthetjük valami biztonságos helyre.
 
 | Szavak száma | Minimális összbetűszám<br />ékezetes karakterek használata esetén | Minimális összbetűszám<br />ékezetes karakterek használata nélkül |
 | ------------ | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
