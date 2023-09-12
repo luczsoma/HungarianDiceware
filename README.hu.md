@@ -72,7 +72,7 @@ Szerintem a Diceware biztonságos jelszógeneráló módszer, mert:
 
 ### 1. verzió
 
-Az 1. verzió elég rossz minőségű. Tartalmaz furcsa szavakat és szavaknak nem mondható furcsaságokat is, ezek miatt nehezebb lehet megjegyezni egy jelmondatot. Nem emlékszem a szólista forrására, ráadásul valamiért jó ötletnek tartottam minden ékezetes betűt az ékezet nélküli párjára cserélni a teljes listán.
+Az 1. verzió nem túl jó minőségű. Furcsa, ritka szavakat és random karakterhalmazokat is tartalmaz, ezek miatt nehezebb lehet megjegyezni egy jelmondatot. Nem emlékszem a szólista forrására, ráadásul valamiért jó ötletnek tartottam minden ékezetes betűt az ékezet nélküli párjára cserélni a teljes listán.
 
 ### 2. verzió
 
