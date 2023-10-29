@@ -39,7 +39,7 @@ Reasons why I consider Diceware a secure password generation method:
 
 4. **I advise that you substitute accented letters with their accent-free variants in the words you found.** Many applications handle passwords containing non-ASCII characters terribly wrongly; even if they get it right, your non-ASCII password might still not work due to possible differences in character encoding, Unicode normalization, etc. (and even differing operating systems can cause such discrepancies). Also, you should be able to type in your passphrase using any keyboard layout. Using accent-free letters does not mean sacrificing security, but you may have to ensure that your passphrase is longer; see the next step.
 
-5. **Make sure that the number of total letters in the six found words is at least the corresponding number in the table below.** If not, start over from step 1. See “The Math” section for why this is important.
+5. **Make sure that the number of total letters in the six found words is at least the corresponding number in the table below.** If not, go back to step 2. See “The Math” section for why this is important.
 
 6. **Your new passphrase is the six words you found, separated by spaces.** Separation is indeed important, otherwise the passphrase can become weaker due to possible redundancy amongst the words.
 
@@ -72,7 +72,7 @@ Reasons why I consider Diceware a secure password generation method:
 
 ### Version 1
 
-Version 1 is of low quality. It contains weird, lesser-known words (and non-words, too), which can make it harder to remember a passphrase. I cannot recall the source of the word list, moreover, for some reason I thought it would be wise to convert all accented letters in the list to their accent-free variants.
+Version 1 is of low quality. It contains weird, lesser-known words (and non-words, too), which can make it harder to remember a passphrase. I cannot recall the source of the word list, moreover, for some reason I thought it would be wise to convert all accented letters on the list to their accent-free variants.
 
 ### Version 2
 
@@ -80,45 +80,45 @@ Version 2 was created using the [Hungarian National Corpus](http://corpus.nytud.
 
 ## The Math
 
-It is usual in the computer industry to specify password strength in terms of information entropy, which is measured in shannon (Sh) and is a concept from information theory. It can be regarded as the minimum number of bits necessary to hold the information in a password of a given type. Instead of the number of guesses needed to find the password with certainty, the base-2 logarithm of that number is given, which is commonly referred to as the number of “entropy bits” in a password, though this is not the same quantity as information entropy. A password with an entropy of 42 bits calculated in this way would be as strong as a string of 42 bits chosen randomly, for example by a fair coin toss. Put another way, a password with an entropy of 42 bits would require 2<sup>42</sup> (4,398,046,511,104) attempts to exhaust all possibilities during a brute force search. Thus, increasing the entropy of the password by one bit doubles the number of guesses required, making an attacker’s task twice as difficult. On average, an attacker will have to try half the possible number of passwords before finding the correct one.
+It is usual in the computer industry to specify password strength in terms of information entropy, which is measured in shannon (Sh) and is a concept from information theory. It can be regarded as the minimum number of bits necessary to hold the information in a password of a given type. Instead of the number of guesses needed to find the password with certainty, the base-2 logarithm of that number is given, which is commonly referred to as the number of “entropy bits” in a password, though this is actually not the same quantity as the information entropy of a password. A password with an entropy of 42 bits calculated in this way would be as strong as a string of 42 bits chosen randomly, for example by a fair coin toss. Put another way, a password with an entropy of 42 bits would require 2<sup>42</sup> (4,398,046,511,104) attempts to exhaust all possibilities during a brute force search. Thus, increasing the entropy of the password by one bit doubles the number of guesses required, making an attacker’s task twice as difficult. On average, an attacker will have to try half the possible number of passwords before finding the correct one.
 
 ### Entropy per symbol for different symbol sets, where each is symbol is equally likely
 
-If symbols are chosen randomly from a set of N elements, the entropy per symbol H<sub>s</sub> is given by the formula H<sub>s</sub> = log<sub>2</sub>(N). Entropy per symbol values for common symbol sets are summarized in the table below.
+If elements are chosen randomly from a set of N symbols, the entropy per symbol H<sub>s</sub> is given by the formula H<sub>s</sub> = log<sub>2</sub>(N). Entropy-per-symbol values for common symbol sets are summarized in the table below.
 
-| Symbol set                                       | Symbol count N | Entropy per symbol H<sub>s</sub> |
-| ------------------------------------------------ | -------------- | -------------------------------- |
-| Arabic numerals (0–9) (e.g. PIN)                 | 10             | ~3.322 bits                      |
-| Hexadecimal numerals (0–9 & A–F) (e.g. WEP keys) | 16             | 4.000 bits                       |
-| Case insensitive Latin alphabet (a–z / A–Z)      | 26             | ~4.700 bits                      |
-| Case insensitive alphanumeric (a–z / A–Z & 0–9)  | 36             | ~5.170 bits                      |
-| Case sensitive Latin alphabet (a–z & A–Z)        | 52             | ~5.700 bits                      |
-| Case sensitive alphanumeric (a–z & A–Z & 0–9)    | 62             | ~5.954 bits                      |
-| All ASCII printable characters except space      | 94             | ~6.555 bits                      |
-| All ASCII printable characters                   | 95             | ~6.570 bits                      |
-| All extended ASCII printable characters          | 218            | ~7.768 bits                      |
-| Binary (0–255 or 8 bits or 1 byte)               | 256            | 8.000 bits                       |
-| Diceware word list                               | 7776           | ~12.925 bits                     |
+| Symbol set                                                 | Symbol count (N) | Entropy per symbol (H<sub>s</sub>) |
+| ---------------------------------------------------------- | ---------------- | ---------------------------------- |
+| Arabic numerals (0–9)                                      | 10               | ~3.322 bits                        |
+| Hexadecimal numerals (0–9 & A–F)                           | 16               | 4 bits                             |
+| Case insensitive Latin alphabet (a–z / A–Z)                | 26               | ~4.700 bits                        |
+| Case insensitive alphanumeric characters (a–z / A–Z & 0–9) | 36               | ~5.170 bits                        |
+| Case sensitive Latin alphabet (a–z & A–Z)                  | 52               | ~5.700 bits                        |
+| Case sensitive alphanumeric characters (a–z & A–Z & 0–9)   | 62               | ~5.954 bits                        |
+| ASCII printable characters except space                    | 94               | ~6.555 bits                        |
+| ASCII printable characters                                 | 95               | ~6.570 bits                        |
+| Extended ASCII printable characters                        | 218              | ~7.768 bits                        |
+| Binary characters (0–255 or 8 bits or 1 byte)              | 256              | 8 bits                             |
+| Diceware word list                                         | 7776             | ~12.925 bits                       |
 
 Diceware’s ~12.925 bits of per-symbol entropy value assumes that potential attackers know three things: that Diceware has been used to create the passphrase, the particular word list used, and exactly how many words make up the passphrase. If an attacker has less information, the per-symbol entropy can be greater than ~12.925 bits. That is, if an attacker does not know you use Diceware to create your passphrases, you may be even safer; but it is still recommended to use at least six words, adhere to the minimum letter count requirement, and decorate the passphrase with mixed-case letters and non-alphabetic characters.
 
-### Lengths L of randomly generated passwords required to achieve a desired password entropy H for symbol sets containing N symbols
+### The minimum length (L) of a password generated randomly from a set of N symbols, required to achieve given password entropy (H)
 
-With a password generated randomly from a set of N symbols, the length L, needed to achieve a desired password entropy H, is given by the formula L = ceil(H / log<sub>2</sub>(N)), where ceil denotes the mathematical ceiling function, i.e., rounding up to the next largest whole number. Length values for common symbol sets are summarized in the table below.
+With a password generated randomly from a set of N symbols, the minimum length of the password (L) required to achieve a desired password entropy (H) is given by the formula L = ceil(H / log<sub>2</sub>(N)), where ceil denotes the mathematical ceiling function (i.e., mapping x to the least integer greater than or equal to x). For the given levels of desired password entropy, the minimum required length values for common symbol sets are summarized in the table below.
 
-| Desired password entropy H | Case sensitive Latin alphabet | Case sensitive alphanumeric | All ASCII printable characters | All extended ASCII printable characters | Diceware word list |
-| -------------------------- | ----------------------------- | --------------------------- | ------------------------------ | --------------------------------------- | ------------------ |
-| 8 bits (1 byte)            | 2                             | 2                           | 2                              | 2                                       | 1                  |
-| 32 bits (4 bytes)          | 6                             | 6                           | 5                              | 5                                       | 3                  |
-| 40 bits (5 bytes)          | 8                             | 7                           | 7                              | 6                                       | 4                  |
-| 64 bits (8 bytes)          | 12                            | 11                          | 10                             | 9                                       | 5                  |
-| 80 bits (10 bytes)         | 15                            | 14                          | 13                             | 11                                      | 7                  |
-| 96 bits (12 bytes)         | 17                            | 17                          | 15                             | 13                                      | 8                  |
-| 128 bits (16 bytes)        | 23                            | 22                          | 20                             | 17                                      | 10                 |
-| 160 bits (20 bytes)        | 29                            | 27                          | 25                             | 21                                      | 13                 |
-| 192 bits (24 bytes)        | 34                            | 33                          | 30                             | 25                                      | 15                 |
-| 224 bits (28 bytes)        | 40                            | 38                          | 35                             | 29                                      | 18                 |
-| 256 bits (32 bytes)        | 45                            | 43                          | 39                             | 33                                      | 20                 |
+| Desired password entropy (H) | Case sensitive Latin alphabet (N = 52) | Case sensitive alphanumeric characters (N = 62) | ASCII printable characters (N = 95) | Extended ASCII printable characters (N = 218) | Diceware word list (N = 7776) |
+| ---------------------------- | -------------------------------------- | ----------------------------------------------- | ----------------------------------- | --------------------------------------------- | ----------------------------- |
+| 8 bits (1 byte)              | 2                                      | 2                                               | 2                                   | 2                                             | 1                             |
+| 32 bits (4 bytes)            | 6                                      | 6                                               | 5                                   | 5                                             | 3                             |
+| 40 bits (5 bytes)            | 8                                      | 7                                               | 7                                   | 6                                             | 4                             |
+| 64 bits (8 bytes)            | 12                                     | 11                                              | 10                                  | 9                                             | 5                             |
+| 80 bits (10 bytes)           | 15                                     | 14                                              | 13                                  | 11                                            | 7                             |
+| 96 bits (12 bytes)           | 17                                     | 17                                              | 15                                  | 13                                            | 8                             |
+| 128 bits (16 bytes)          | 23                                     | 22                                              | 20                                  | 17                                            | 10                            |
+| 160 bits (20 bytes)          | 29                                     | 27                                              | 25                                  | 21                                            | 13                            |
+| 192 bits (24 bytes)          | 34                                     | 33                                              | 30                                  | 25                                            | 15                            |
+| 224 bits (28 bytes)          | 40                                     | 38                                              | 35                                  | 29                                            | 18                            |
+| 256 bits (32 bytes)          | 45                                     | 43                                              | 39                                  | 33                                            | 20                            |
 
 Diceware’s values assume that potential attackers know three things: that Diceware has been used to create the passphrase, the particular word list used, and exactly how many words make up the passphrase. If an attacker has less information, the desired password entropy can be achieved with a shorter passphrase. That is, if an attacker does not know you use Diceware for creating your passphrases, you may be even safer; but it is still recommended to use at least six words, adhere to the minimum letter count requirement, and decorate the passphrase with mixed-case letters and non-alphabetic characters.
 
