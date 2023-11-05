@@ -39,7 +39,7 @@ Szerintem a Diceware biztonságos jelszógeneráló módszer, mert:
 
 4. **Ajánlatos lecserélnünk a talált szavakban lévő ékezetes betűket ékezet nélküliekre.** Sok alkalmazás borzalmasan rosszul kezeli a nem ASCII-karaktereket is tartalmazó jelszavakat; de még ha alkalmazásszinten nincs is hiba, sem feltétlenül fog működni a nem ASCII-jelszavunk esetleges karakterkódolási, Unicode-normalizálási, stb. különbségek miatt (és ilyeneket okozhat akár eltérő operációs rendszer használata is). Egyébként is célszerű olyan jelszót választani, amit bármilyen billentyűzetkiosztással be tudunk gépelni. Az ékezet nélküli betűk használata nem jelenti, hogy bármit is be kellene áldoznunk a biztonságunkból, de lehet, hogy hosszabb jelmondatra lesz szükségünk; lásd a következő lépést.
 
-5. **Győződjünk meg róla, hogy a hat megtalált szóban lévő betűk száma összesen legalább annyi, mint az alábbi táblázat megfelelő mezőjében.** Ha nem, kezdjük újra a jelmondatkészítést a 2. lépéstől. A minimális összbetűszám szükségességének okáért lásd „A Matek” bekezdést.
+5. **Győződjünk meg róla, hogy a hat megtalált szóban lévő betűk száma összesen legalább annyi, mint az alábbi táblázat megfelelő mezőjében.** Ha nem, kezdjük újra a jelmondatkészítést a 2. lépéstől. A minimális összbetűszám követelmény okáért lásd „A Matek” bekezdést.
 
 6. **A kész jelmondatunk a hat megtalált szó szóközökkel elválasztva.** A szavak elválasztása fontos, enélkül a jelmondatunk gyengébb lehet a szavak közötti esetleges redundancia miatt.
 
@@ -80,7 +80,7 @@ A 2. verzió a [Magyar Nemzeti Szövegtár](http://corpus.nytud.hu/mnsz/index_hu
 
 ## A Matek
 
-A számítástechnikában a jelszavak erősségét általában az információelméletből származó, shannonban (Sh) mért információs entrópia nevű mennyiséggel jellemzik. Ez egy adott típusú jelszóban lévő információ tárolásához minimálisan szükséges bitek számaként értelmezhető. A jelszó biztos megtalálásához szükséges próbálkozások száma helyett annak kettes alapú logaritmusát véve kapott értékre általában a jelszó „entrópiabitjeinek” számaként szokásos hivatkozni, bár ez valójában nem ugyanaz a mennyiség, mint a jelszó információs entrópiája. Egy ilyen módon számolva 42 bit entrópiával rendelkező jelszó ugyanolyan erős lenne, mint egy 42 elemű bitlánc, amelynek minden eleme véletlenszerűen, pl. igazságos pénzfeldobással lett kiválasztva. Másképp fogalmazva, egy 42 bit entrópiával rendelkező jelszó 2<sup>42</sup> (4 398 046 511 104) kísérletet igényelne az összes lehetőség végigpróbálgatásához egy kimerítő keresés során. A jelszó entrópiájának egy bittel való megnövelése tehát megduplázza a szükséges próbálkozások számát, kétszer nehezebbé téve egy támadó dolgát. A támadónak átlagosan a lehetséges jelszavak felét kell végigpróbálgatnia a helyes jelszó megtalálásához.
+A számítástechnikában a jelszavak erősségét általában az információelméletből származó, shannonban (Sh) mért információs entrópia nevű mennyiséggel jellemzik. Ez egy adott típusú jelszóban lévő információ tárolásához minimálisan szükséges bitek számaként értelmezhető. A jelszó biztos megtalálásához szükséges próbálkozások száma helyett annak kettes alapú logaritmusát véve kapott értékre általában a jelszó „entrópiabitjeinek” számaként szoktak hivatkozni, bár ez valójában nem ugyanaz a mennyiség, mint a jelszó információs entrópiája. Egy ilyen módon számolva 42 bit entrópiával rendelkező jelszó ugyanolyan erős lenne, mint egy 42 elemű bitlánc, amelynek minden eleme véletlenszerűen, pl. igazságos pénzfeldobással lett kiválasztva. Másképp fogalmazva, egy 42 bit entrópiával rendelkező jelszó 2<sup>42</sup> (4 398 046 511 104) kísérletet igényelne az összes lehetőség végigpróbálgatásához egy kimerítő keresés során. A jelszó entrópiájának egy bittel való megnövelése tehát megduplázza a szükséges próbálkozások számát, kétszer nehezebbé téve egy támadó dolgát. A támadónak átlagosan a lehetséges jelszavak felét kell végigpróbálgatnia a helyes jelszó megtalálásához.
 
 ### Szimbólumonkénti entrópia egy olyan szimbólumkészlet esetén, ahol minden szimbólum egyforma valószínűségű
 
@@ -126,6 +126,24 @@ A Diceware értékei feltételezik, hogy a potenciális támadók három dolgot 
 
 Egy jelszó entrópiabitjeinek minimális száma az adott alkalmazás biztonsági modelljétől függ. Ha a szoftver nem alkalmaz kulcsnyújtást (key stretching), magasabb entrópiájú jelszavak használata szükséges. A 2005 júniusában közzétett RFC 4086, „Randomness Requirements for Security”, mutat néhány példát arra, hogy különféle biztonsági modellek esetén milyen kívánt jelszóentrópiával számoljunk. Az ebben megfogalmazott javaslatok alsó korlátja, ha csak online támadások várhatók, 29 bit; felső korlátja pedig 96 bit, hosszú ideig használatban lévő fontos kriptográfiai kulcsok esetén, pl. titkosító alkalmazásokban, ha kulcsnyújtás nem alkalmazható. Egy nyújtatlan kulcsokra alapozó 2010-es Giorgia Tech Research Institute-tanulmány legalább 12 karakter hosszúságú véletlenszerű jelszavakat javasolt. Az offline támadások megelőzése érdekében ajánlott szem előtt tartani, hogy a számítási teljesítmény folyamatos növekedésével párhuzamosan a szükséges entrópiabitek számának is növekednie kell.
 
-A felső korlát a titkosításhoz használt kulcsok kiválasztásának követelményein alapul. 1999-ben egy Electronic Frontier Foundation-projekt kevesebb mint egy nap alatt feltörte az 56 bites DES titkosítást egy erre a célra tervezett hardver segítségével. 2002-re a distributed.net – 4 év, 9 hónap és 23 nap alatt – feltört egy 64 bites kulcsot. Egy 2012. október 12-i distributed.net-becslés szerint egy 72 bites kulcs feltörése akkori hardverekkel 45 479 napig, azaz 124,8 évig tartott volna. A jelenlegi ismereteink szerinti alapvető fizikai korlátok miatt nem várható, hogy bármilyen digitális számítógép vagy hálózat kimerítő kereséssel fel tudjon törni 256 bites titkosítást. Még nem ismert, hogy a kvantumszámítógépek a gyakorlatban képesek lesznek-e erre; elméletben nem zárható ki ez az eshetőség.
+A felső korlát a titkosításhoz használt kulcsok kiválasztásának követelményein alapul. 1999-ben egy Electronic Frontier Foundation-projekt kevesebb mint egy nap alatt feltörte az 56 bites DES titkosítást egy erre a célra tervezett hardver segítségével. 2002-re a distributed.net – 4 év, 9 hónap és 23 nap alatt – feltört egy 64 bites kulcsot. Egy 2012. október 12-i distributed.net-becslés szerint egy 72 bites kulcs feltörése akkori hardverekkel 45 479 napig, azaz 124,8 évig tartott volna. A jelenlegi ismereteink szerinti alapvető fizikai korlátok miatt nem várható, hogy bármilyen digitális számítógép vagy hálózat kimerítő kereséssel fel tudjon törni 256 bites titkosítást. Még nem ismert, hogy a kvantumszámítógépek a gyakorlatban képesek lesznek-e erre; az elmélet nem zárja ki ezt az eshetőséget.
 
-Hat Diceware szó használata ~77,549 bit jelszóentrópiát jelent. Mindennapi használatra ez elég kell hogy legyen. Tíz szó használata ~129,248 bit entrópiát jelent; ez már magasabb, mint a klasszikus 128 bites biztonság, és a biztonsági tartaléka nagy valószínűséggel ki fog tartani a kvantumszámítógépek érkezéséig. Húsz szó használata ~258,426 bit entrópiát jelent; mai ismereteink szerint ez védelmet nyújt a kvantumszámítógépek ellen is.
+Hat Diceware szó használata ~77,549 bit jelszóentrópiát jelent; mindennapi használatra ez elég kellene hogy legyen. Tíz szó használata ~129,248 bit entrópiát jelent; ez már magasabb, mint a klasszikus „128 bites biztonság”, és a biztonsági tartaléka nagy valószínűséggel ki fog tartani a kvantumszámítógépek érkezéséig. Húsz szó használata ~258,426 bit entrópiát jelent; mai ismereteink szerint ez védelmet nyújt a kvantumszámítógépek ellen is.
+
+### A lista 2. verziójának fontosabb statisztikai tulajdonságai
+
+#### A szóhosszak valószínűségi eloszlása
+
+Jelölje L valószínűségi változó egy, a lista 2. verziójáról véletlenszerűen választott szó hosszát. L valószínűségi eloszlása a következő:
+
+- P(L = 2) = ? / ? ≈ ? = ?%
+- P(L = 3) =
+- P(L = 4) =
+- P(L = 5) =
+- P(L = 6) =
+
+#### A minimális összbetűszám követelményét nem teljesítő jelmondat készítésének esélye
+
+TODO
+
+#### A betűk valószínűségi eloszlása
