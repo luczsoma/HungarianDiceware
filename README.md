@@ -356,7 +356,7 @@ Let $`H_1`$ be the entropy of $`X_1`$ in bits:
 H_1 := H(X_1) = - \sum_{l \in L_1} P(X_1 = i_1(l)) \log_2 P(X_1 = i_1(l)) \approx TODO~\mathrm{bit}
 ```
 
-Let $`L_2`$ be the set of the 26 letters that can be present in a non-decorated passphrase created with Diceware using the Version 2 list, if its accented letters are substituted with their non-accented variants according to the following substitution rules (the sign ‘>’ denoting substitution): ‘á’ > ‘a’, ‘é’ > ‘e’, ‘í’ > ‘i’, ‘ó’ > ‘o’, ‘ö’ > ‘o’, ‘ő’ > ‘o’, ‘ú’ > ‘u’, ‘ü’ > ‘u’, ‘ű’ > ‘u’. These are the lowercase letters of the English alphabet:
+Let $`L_2`$ be the set of the 26 letters that can be present in a non-decorated passphrase created with Diceware using the Version 2 list if its accented letters are substituted with their non-accented variants according to the following substitution rules (the sign ‘>’ denoting substitution): ‘á’ > ‘a’, ‘é’ > ‘e’, ‘í’ > ‘i’, ‘ó’ > ‘o’, ‘ö’ > ‘o’, ‘ő’ > ‘o’, ‘ú’ > ‘u’, ‘ü’ > ‘u’, ‘ű’ > ‘u’. These are the lowercase letters of the English alphabet:
 
 ```math
 L_2 = \{ \mathrm{a}, \mathrm{b}, \mathrm{c}, \mathrm{d}, \mathrm{e}, \mathrm{f}, \mathrm{g}, \mathrm{h}, \mathrm{i}, \mathrm{j}, \mathrm{k}, \mathrm{l}, \mathrm{m}, \mathrm{n}, \mathrm{o}, \mathrm{p}, \mathrm{q}, \mathrm{r}, \mathrm{s}, \mathrm{t}, \mathrm{u}, \mathrm{v}, \mathrm{w}, \mathrm{x}, \mathrm{y}, \mathrm{z} \}
@@ -380,7 +380,7 @@ i_2(\mathrm{b}) = 2,
 i_2(\mathrm{z}) = 26.
 ```
 
-Let $`l \in L_2`$ be a letter chosen randomly from the Version 2 list, if its accented letters are substituted with their non-accented variants according to the substitution rules above, and let $`X_2`$ be a random variable that represents $`i_2(l)`$. $`X_2`$ has the following probability distribution:
+Let $`l \in L_2`$ be a letter chosen randomly from the Version 2 list if its accented letters are substituted with their non-accented variants according to the substitution rules above, and let $`X_2`$ be a random variable that represents $`i_2(l)`$. $`X_2`$ has the following probability distribution:
 
 ```math
 P(X_2 < i_2(\mathrm{a})) = 0
