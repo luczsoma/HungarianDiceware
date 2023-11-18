@@ -523,7 +523,7 @@ A fenti képleteket behelyettesítve az egyenlőtlenségbe:
 L \cdot H_\mathrm{c} \geq W \cdot \log_2 7776.
 ```
 
-$`L`$-re átrendezve az egyenlőtlenséget, meghatározható a minimális összbetűszám annak érdekében, hogy ne veszítsünk biztonságot:
+Az egyenlőtlenséget $`L`$-re átrendezve meghatározható az ahhoz szükséges minimális összbetűszám, hogy ne veszítsünk biztonságot:
 
 ```math
 L \geq \frac{W \cdot \log_2 7776}{H_\mathrm{c}}.
