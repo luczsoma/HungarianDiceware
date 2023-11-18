@@ -509,7 +509,7 @@ Ahogyan azt fentebb láthattuk, a magas jelszóentrópia két hozzávalója:
 
 A Diceware nagyméretű szimbólumkészlettel dolgozik: a szimbólumai a Diceware szólistán szereplő 7776 szó. Ezzel szemben például egy kisbetű-nagybetű érzékeny latin alfanumerikus jelszó egy mindössze 62 elemből álló szimbólumkészletből épül fel (26 kis-, 26 nagybetű és 10 szám). A Diceware a nagyméretű szimbólumkészletének köszönhetően kevesebb szimbólum (szó) felhasználásával is magas entrópiájú jelszavakat készít.
 
-A minimális összbetűszám követelménye abból adódik, hogy nem szeretnénk biztonságot veszíteni pusztán amiatt, mert úgy tekintünk a Diceware-jelmondatunkra, mintha az egy adott Diceware-szólistán előforduló, független karakterek lánca lenne. Nem szeretnénk kevésbé biztonságban tudni az adatainkat akkor sem, ha egy támadó – annak tudatában, hogy egy adott szólistával Diceware-t használunk – úgy dönt, hogy nem szavanként, hanem karakterenként próbálja meg feltörni a jelszavunkat kimerítő kereséssel, az általunk használt szólistán szereplő karakterek valószínűségi eloszlása alapján. Ezt úgy biztosíthatjuk, ha legalább annyi „karakteralapú” entrópiája ($`H_\mathrm{C}`$) van a jelmondatunknak, mint „szóalapú” entrópiája ($`H_\mathrm{W}`$):
+A minimális összbetűszám követelménye abból adódik, hogy nem szeretnénk biztonságot veszíteni pusztán amiatt, mert úgy tekintünk a Diceware-jelmondatunkra, mintha az egy adott Diceware-szólistán előforduló, független karakterek lánca lenne. Pontosabban, nem szeretnénk kevésbé biztonságban tudni az adatainkat, ha egy támadó – annak tudatában, hogy Diceware-t használunk egy adott szólistával – úgy dönt, hogy nem szavanként, hanem karakterenként próbálja meg feltörni a jelmondatunkat kimerítő kereséssel, az általunk használt szólistán szereplő karakterek valószínűségi eloszlása alapján. Ezt úgy biztosíthatjuk, ha legalább annyi „karakteralapú” entrópiája ($`H_\mathrm{C}`$) van a jelmondatunknak, mint „szóalapú” entrópiája ($`H_\mathrm{W}`$):
 
 ```math
 H_\mathrm{C} \geq H_\mathrm{W}.
@@ -541,7 +541,7 @@ A 2. verziójú lista $`H_\mathrm{c}`$ értéke $`H_1 \approx TODO~\mathrm{bit}`
 
 Az $`L_\mathrm{min}`$ értékeit $`5 \leq W \leq 20`$, illetve $`H_\mathrm{c} = H_1`$ és $`H_\mathrm{c} = H_2`$ esetén a „Hogyan használjuk?” bekezdésben található táblázat tartalmazza.
 
-Megjegyezzük, hogy a gyakorlatban valószínűleg pusztán a szavak elválasztása is elégséges további „karakteralapú” entrópiát biztosít ahhoz, hogy egy, a minimális összbetűszám követelményt egyébként nem teljesítő jelmondat biztonságát ne gyengítse. Mindemellett továbbra is ajánlott betartani a minimális összbetűszám követelményt (illetve legalább hatszavas jelmondatokat készíteni, és feldíszíteni azt kis- és nagybetűkkel és nem-alfabetikus karakterekkel).
+Megjegyezzük, hogy a gyakorlatban valószínűleg pusztán a szavak elválasztása is elégséges további „karakteralapú” entrópiát biztosít ahhoz, hogy egy, a minimális összbetűszám követelményt egyébként nem teljesítő jelmondat biztonságát ne gyengítse. Mindemellett továbbra is ajánlott betartani a minimális összbetűszám követelményt (illetve legalább hatszavas jelmondatot készíteni, és feldíszíteni azt kis- és nagybetűkkel és nem-alfabetikus karakterekkel).
 
 ## Felhasznált források:
 
