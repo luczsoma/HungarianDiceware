@@ -362,7 +362,7 @@ Let $`L_2`$ be the set of the 26 letters that can be present in a non-decorated 
 L_2 = \{ \mathrm{a}, \mathrm{b}, \mathrm{c}, \mathrm{d}, \mathrm{e}, \mathrm{f}, \mathrm{g}, \mathrm{h}, \mathrm{i}, \mathrm{j}, \mathrm{k}, \mathrm{l}, \mathrm{m}, \mathrm{n}, \mathrm{o}, \mathrm{p}, \mathrm{q}, \mathrm{r}, \mathrm{s}, \mathrm{t}, \mathrm{u}, \mathrm{v}, \mathrm{w}, \mathrm{x}, \mathrm{y}, \mathrm{z} \}
 ```
 
-Let $`i_2`$ be a function that maps the elements of $`L_2`$ to their numeric position in the alphabetically ordered enumeration of $`L_2`$, such that
+Let $`i_2`$ be a function that maps the elements of $`L_2`$ to their numeric position in the alphabetically ordered enumeration of $`L_2`$:
 
 ```math
 i_2(\mathrm{a}) = 1,
@@ -502,7 +502,7 @@ H_2 := H(X_2) = - \sum_{l \in L_2} P(X_2 = i_2(l)) \log_2 P(X_2 = i_2(l)) \appro
 
 ### Why is there a minimum letter count requirement? Thinking of a Diceware passphrase as a string of characters
 
-As seen above, a password of high entropy can be the result of two factors:
+As seen above, high password entropy can be the result of two factors:
 
 - a large symbol set,
 - using many of those symbols in the password.
@@ -539,7 +539,7 @@ where $`\lceil~\rceil`$ denotes the mathematical ceiling function (i.e., the fun
 
 The $`H_\mathrm{c}`$ value of the Version 2 list is $`H_1 \approx TODO~\mathrm{bit}`$ if using accented letters and $`H_2 \approx TODO~\mathrm{bit}`$ if not using accented letters.
 
-Values of $`L`$ for $`5 \leq W \leq 20`$ with $`H_\mathrm{c} = H_1`$ and $`H_\mathrm{c} = H_2`$ are summarized in the table in the “How to use it?” section.
+Values of $`L_\mathrm{min}`$ for $`5 \leq W \leq 20`$ with $`H_\mathrm{c} = H_1`$ and $`H_\mathrm{c} = H_2`$ are summarized in the table in the “How to use it?” section.
 
 Note that in practice, separating the words likely provides enough additional “character-based” entropy in itself not to weaken the overall security of a passphrase otherwise not satisfying the minimum letter count requirement. Nevertheless, it is still recommended to adhere to the minimum letter count requirement (and to use at least six words in the passphrase, and to decorate it with mixed-case letters and non-alphabetic characters).
 

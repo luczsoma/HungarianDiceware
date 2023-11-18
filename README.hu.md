@@ -31,7 +31,7 @@ Szerintem a Diceware biztonságos jelszógeneráló módszer, mert:
 
 0. **Szükségünk lesz egy vagy több dobókockára.** Határozottan nem javaslom online vagy elektronikus Diceware-eszközök használatát, mert ezzel a Diceware-módszer két fontos biztonsági jellemzőjét is semlegesítjük. A maximális biztonság érdekében jobb, ha kinyomtatjuk a Diceware-szólistát, hogy még a szavak kikeresését se lehessen elektronikusan kifigyelni.
 
-1. **Döntsük el, hány szóból álljon a jelmondat.** Egy ötszavas jelmondat már sokkal magasabb biztonságot nyújt, mint az általában használt egyszerű jelszavak. Jelszókezelő mesterjelszavaként legalább hat szó ajánlott, bár erre én inkább egy nyolc- vagy tízszavas jelmondatot használnék. Kevésbé gyakori felhasználásra vagy nagyértékű adat védelmére húszszavas jelmondat is készíthető. (Húsz szó használata már valamivel biztonságosabb, mint egy 256 bites szimmetrikus kulcsé, így nem igazán van értelme feljebb menni. További információkért lásd „A Matek” bekezdést.)
+1. **Döntsük el, hány szóból álljon a jelmondat.** Egy ötszavas jelmondat már sokkal magasabb biztonságot nyújt, mint az általában használt egyszerű jelszavak. Jelszókezelő mesterjelszavaként legalább hat szó ajánlott, bár erre én inkább egy nyolc- vagy tízszavas jelmondatot használnék. Kevésbé gyakori felhasználásra vagy nagyértékű adat védelmére akár húszszavas jelmondat is készíthető. (Húsz szó használata már valamivel biztonságosabb, mint egy 256 bites szimmetrikus kulcsé, így nem igazán van értelme feljebb menni. További információkért lásd „A Matek” bekezdést.)
 
 2. **Tegyük fel, hogy hatszavas jelmondat mellett döntöttünk. Ehhez 6 \* 5 = 30 darab egy és hat közötti számra, azaz összesen harminc kockadobásra lesz szükségünk.** Dobhatunk egy kockával harmincszor, harminc kockával egyszerre, vagy bármilyen más kombinációban is; de dobás előtt mindenképpen alaposan rázzuk össze a kocká(ka)t. Ha egyszerre több kockával dobunk, balról jobbra olvassuk le őket. Írjuk le a kockadobások eredményét ötösével csoportosítva egy papírra; jobb, ha nem használunk elektronikát az eredmény rögzítéséhez.
 
@@ -84,47 +84,53 @@ A számítástechnikában a jelszavak erősségét általában az információel
 
 ### Szimbólumonkénti entrópia egy olyan szimbólumkészlet esetén, ahol minden szimbólum egyforma valószínűségű
 
-Ha az elemeket véletlenszerűen választjuk ki egy N elemű szimbólumhalmazból, a H<sub>s</sub> szimbólumonkénti entrópiát a H<sub>s</sub> = log<sub>2</sub>(N) képlet adja meg. Az alábbi táblázat néhány gyakori szimbólumkészlet szimbólumonkénti entrópiaértékét tartalmazza.
+Ha az elemeket véletlenszerűen választjuk ki egy $`N`$ elemű szimbólumhalmazból, a szimbólumonkénti entrópiát ($`H_s`$) bitekben a $`H_s = \log_2 N`$ képlet adja meg. Az alábbi táblázat néhány gyakori szimbólumkészlet szimbólumonkénti entrópiaértékét tartalmazza.
 
-| Szimbólumkészet                                                        | Szimbólumok száma (N) | Szimbólumonkénti entrópia (H<sub>s</sub>) |
-| ---------------------------------------------------------------------- | --------------------- | ----------------------------------------- |
-| Arab számok (0–9)                                                      | 10                    | ~3,322 bit                                |
-| Hexadecimális számok (0–9 & A–F)                                       | 16                    | 4 bit                                     |
-| Kisbetű-nagybetű érzéketlen latin ábécé (a–z / A–Z)                    | 26                    | ~4,700 bit                                |
-| Kisbetű-nagybetű érzéketlen alfanumerikus karakterek (a–z / A–Z & 0–9) | 36                    | ~5,170 bit                                |
-| Kisbetű-nagybetű érzékeny latin ábécé (a–z & A–Z)                      | 52                    | ~5,700 bit                                |
-| Kisbetű-nagybetű érzékeny alfanumerikus karakterek (a–z & A–Z & 0–9)   | 62                    | ~5,954 bit                                |
-| ASCII nyomtatható karakterek, kivéve szókoz                            | 94                    | ~6,555 bit                                |
-| ASCII nyomtatható karakterek                                           | 95                    | ~6,570 bit                                |
-| Kiterjesztett ASCII nyomhatható karakterek                             | 218                   | ~7,768 bit                                |
-| Bináris karakterek (0–255 vagy 8 bit vagy 1 bájt)                      | 256                   | 8 bit                                     |
-| Diceware szólista                                                      | 7776                  | ~12,925 bit                               |
+| Szimbólumkészet                                                        | Szimbólumok száma ($`N`$) | Szimbólumonkénti entrópia ($`H_s`$) |
+| ---------------------------------------------------------------------- | ------------------------- | ----------------------------------- |
+| Arab számok (0–9)                                                      | 10                        | ~3,322 bit                          |
+| Hexadecimális számok (0–9 & A–F)                                       | 16                        | 4 bit                               |
+| Kisbetű-nagybetű érzéketlen latin ábécé (a–z / A–Z)                    | 26                        | ~4,700 bit                          |
+| Kisbetű-nagybetű érzéketlen alfanumerikus karakterek (a–z / A–Z & 0–9) | 36                        | ~5,170 bit                          |
+| Kisbetű-nagybetű érzékeny latin ábécé (a–z & A–Z)                      | 52                        | ~5,700 bit                          |
+| Kisbetű-nagybetű érzékeny alfanumerikus karakterek (a–z & A–Z & 0–9)   | 62                        | ~5,954 bit                          |
+| ASCII nyomtatható karakterek, kivéve szókoz                            | 94                        | ~6,555 bit                          |
+| ASCII nyomtatható karakterek                                           | 95                        | ~6,570 bit                          |
+| Kiterjesztett ASCII nyomhatható karakterek                             | 218                       | ~7,768 bit                          |
+| Bináris karakterek (0–255 vagy 8 bit vagy 1 bájt)                      | 256                       | 8 bit                               |
+| Diceware szólista                                                      | 7776                      | ~12,925 bit                         |
 
-A Diceware ~12,925 bites szimbólumonkénti entrópiaértéke feltételezi, hogy a potenciális támadók három dolgot tudnak a jelmondatról: hogy Diceware-rel készült, hogy milyen szólistát használtak az elkészítéséhez, és hogy hány szóból áll. Ha egy támadó kevesebb információval rendelkezik, akkor a szimbólumonkénti entrópia nagyobb is lehet ~12,925 bitnél. Vagyis, ha egy támadó nem tudja, hogy Diceware-rel készítettük a jelmondatainkat, még nagyobb biztonságban is lehetünk; ezzel együtt továbbra is ajánlott legalább hat szót használni, figyelni a minimális összbetűszám követelményére, valamint feldíszíteni a jelmondatot kis- és nagybetűkkel és nem-alfabetikus karakterekkel.
+A Diceware ~12,925 bites szimbólumonkénti entrópiaértéke feltételezi, hogy a potenciális támadók három dolgot tudnak a jelmondatról: hogy Diceware-rel készült, hogy milyen szólistát használtak az elkészítéséhez, és hogy hány szóból áll. Ha egy támadó kevesebb információval rendelkezik, akkor a szimbólumonkénti entrópia nagyobb is lehet ~12,925 bitnél. Azaz ha egy támadó nem tudja, hogy Diceware-rel készítettük a jelmondatainkat, még nagyobb biztonságban is lehetünk; ezzel együtt továbbra is ajánlott legalább hat szót használni, betartani a minimális összbetűszám követelményt, valamint feldíszíteni a jelmondatot kis- és nagybetűkkel és nem-alfabetikus karakterekkel.
 
-### Adott jelszóentrópia (H) eléréséhez szükséges minimális jelszóhossz (L) egy N elemű szimbólumhalmazból véletlenszerűen generált jelszó esetén
+### Adott jelszóentrópia eléréséhez szükséges minimális jelszóhossz egy adott szimbólumhalmazból véletlenszerűen generált jelszó esetén
 
-Egy N elemű szimbólumhalmazból véletlenszerűen generált jelszó minimálisan szükséges hosszát (L) a kívánt jelszóentrópia (H) eléréséhez az L = ceil(H / log<sub>2</sub>(N)) képlet adja meg, ahol a ceil a matematikai felső egészrész függvényt jelöli (azaz ami x-hez a legkisebb x-nél nagyobb vagy vele egyenlő számot rendeli hozzá). Az alábbi táblázat az adott jelszóentrópia-szintekhez minimálisan szükséges jelszóhosszakat tartalmazza néhány gyakori szimbólumkészletre.
+Egy $`N`$ elemű szimbólumhalmazból véletlenszerűen generált jelszó minimálisan szükséges hosszát ($`L_\mathrm{min}`$) a kívánt jelszóentrópia ($`H`$) eléréséhez az
 
-| Kívánt jelszóentrópia (H) | Kisbetű-nagybetű érzékeny latin ábécé (N = 52) | Kisbetű-nagybetű érzékeny alfanumerikus karakterek (N = 62) | ASCII nyomtatható karakterek (N = 95) | Kiterjesztett ASCII nyomhatható karakterek (N = 218) | Diceware szólista (N = 7776) |
-| ------------------------- | ---------------------------------------------- | ----------------------------------------------------------- | ------------------------------------- | ---------------------------------------------------- | ---------------------------- |
-| 8 bit (1 bájt)            | 2                                              | 2                                                           | 2                                     | 2                                                    | 1                            |
-| 32 bit (4 bájt)           | 6                                              | 6                                                           | 5                                     | 5                                                    | 3                            |
-| 40 bit (5 bájt)           | 8                                              | 7                                                           | 7                                     | 6                                                    | 4                            |
-| 64 bit (8 bájt)           | 12                                             | 11                                                          | 10                                    | 9                                                    | 5                            |
-| 80 bit (10 bájt)          | 15                                             | 14                                                          | 13                                    | 11                                                   | 7                            |
-| 96 bit (12 bájt)          | 17                                             | 17                                                          | 15                                    | 13                                                   | 8                            |
-| 128 bit (16 bájt)         | 23                                             | 22                                                          | 20                                    | 17                                                   | 10                           |
-| 160 bit (20 bájt)         | 29                                             | 27                                                          | 25                                    | 21                                                   | 13                           |
-| 192 bit (24 bájt)         | 34                                             | 33                                                          | 30                                    | 25                                                   | 15                           |
-| 224 bit (28 bájt)         | 40                                             | 38                                                          | 35                                    | 29                                                   | 18                           |
-| 256 bit (32 bájt)         | 45                                             | 43                                                          | 39                                    | 33                                                   | 20                           |
+```math
+L_\mathrm{min} = \left\lceil \frac{H}{\log_2 N} \right\rceil,
+```
 
-A Diceware értékei feltételezik, hogy a potenciális támadók három dolgot tudnak a jelmondatról: hogy Diceware-rel készült, hogy milyen szólistát használtak az elkészítéséhez, és hogy hány szóból áll. Ha egy támadó kevesebb információval rendelkezik, a kívánt jelszóentrópia rövidebb jelmondattal is elérhető. Vagyis, ha egy támadó nem tudja, hogy Diceware-rel készítettük a jelmondatainkat, még nagyobb biztonságban is lehetünk; ezzel együtt továbbra is ajánlott legalább hat szót használni, figyelni a minimális összbetűszám követelményére, valamint feldíszíteni a jelmondatot kis- és nagybetűkkel és nem-alfabetikus karakterekkel.
+képlet adja meg, ahol a $`\lceil~\rceil`$ a matematikai felső egészrész függvényt jelöli (azaz azt a $`c`$ függvényt, amit a következő képlet definiál: $`c(x) = \min \{ y \in \mathbb{Z} \mid y \geq x \} \quad (x \in \mathbb{R})`$). Az alábbi táblázat az adott jelszóentrópia-szintekhez minimálisan szükséges jelszóhosszakat tartalmazza néhány gyakoribb szimbólumkészletre.
+
+| Kívánt jelszóentrópia ($`H`$) | Kisbetű-nagybetű érzékeny latin ábécé ($`N = 52`$) | Kisbetű-nagybetű érzékeny alfanumerikus karakterek ($`N = 62`$) | ASCII nyomtatható karakterek ($`N = 95`$) | Kiterjesztett ASCII nyomhatható karakterek ($`N = 218`$) | Diceware szólista ($`N = 7776`$) |
+| ----------------------------- | -------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------------- | -------------------------------------------------------- | -------------------------------- |
+| 8 bit (1 bájt)                | 2                                                  | 2                                                               | 2                                         | 2                                                        | 1                                |
+| 32 bit (4 bájt)               | 6                                                  | 6                                                               | 5                                         | 5                                                        | 3                                |
+| 40 bit (5 bájt)               | 8                                                  | 7                                                               | 7                                         | 6                                                        | 4                                |
+| 64 bit (8 bájt)               | 12                                                 | 11                                                              | 10                                        | 9                                                        | 5                                |
+| 80 bit (10 bájt)              | 15                                                 | 14                                                              | 13                                        | 11                                                       | 7                                |
+| 96 bit (12 bájt)              | 17                                                 | 17                                                              | 15                                        | 13                                                       | 8                                |
+| 128 bit (16 bájt)             | 23                                                 | 22                                                              | 20                                        | 17                                                       | 10                               |
+| 160 bit (20 bájt)             | 29                                                 | 27                                                              | 25                                        | 21                                                       | 13                               |
+| 192 bit (24 bájt)             | 34                                                 | 33                                                              | 30                                        | 25                                                       | 15                               |
+| 224 bit (28 bájt)             | 40                                                 | 38                                                              | 35                                        | 29                                                       | 18                               |
+| 256 bit (32 bájt)             | 45                                                 | 43                                                              | 39                                        | 33                                                       | 20                               |
+
+A Diceware értékei feltételezik, hogy a potenciális támadók három dolgot tudnak a jelmondatról: hogy Diceware-rel készült, hogy milyen szólistát használtak az elkészítéséhez, és hogy hány szóból áll. Ha egy támadó kevesebb információval rendelkezik, a kívánt jelszóentrópia rövidebb jelmondattal is elérhető. Azaz ha egy támadó nem tudja, hogy Diceware-rel készítettük a jelmondatainkat, még nagyobb biztonságban is lehetünk; ezzel együtt továbbra is ajánlott legalább hat szót használni, betartani a minimális összbetűszám követelményt, valamint feldíszíteni a jelmondatot kis- és nagybetűkkel és nem-alfabetikus karakterekkel.
 
 ### Mennyi jelszóentrópia szükséges?
 
-Egy jelszó entrópiabitjeinek minimális száma az adott alkalmazás biztonsági modelljétől függ. Ha a szoftver nem alkalmaz kulcsnyújtást (key stretching), magasabb entrópiájú jelszavak használata szükséges. A 2005 júniusában közzétett RFC 4086, „Randomness Requirements for Security”, mutat néhány példát arra, hogy különféle biztonsági modellek esetén milyen kívánt jelszóentrópiával számoljunk. Az ebben megfogalmazott javaslatok alsó korlátja, ha csak online támadások várhatók, 29 bit; felső korlátja pedig 96 bit, hosszú ideig használatban lévő fontos kriptográfiai kulcsok esetén, pl. titkosító alkalmazásokban, ha kulcsnyújtás nem alkalmazható. Egy nyújtatlan kulcsokra alapozó 2010-es Giorgia Tech Research Institute-tanulmány legalább 12 karakter hosszúságú véletlenszerű jelszavakat javasolt. Az offline támadások megelőzése érdekében ajánlott szem előtt tartani, hogy a számítási teljesítmény folyamatos növekedésével párhuzamosan a szükséges entrópiabitek számának is növekednie kell.
+Egy jelszó entrópiabitjeinek minimális száma az adott alkalmazás biztonsági modelljétől függ. Ha jelszó nem esik át kulcsnyújtáson (key stretching), magasabb entrópiájú jelszavak használata szükséges. A 2005 júniusában közzétett RFC 4086, „Randomness Requirements for Security”, mutat néhány példát arra, hogy különféle biztonsági modellek esetén milyen kívánt jelszóentrópiával számoljunk. A megfogalmazott javaslatok alsó korlátja, ha csak online támadások várhatók, 29 bit; felső korlátja pedig 96 bit, hosszú ideig használatban lévő fontos kriptográfiai kulcsok esetén, pl. titkosító alkalmazásokban, ha kulcsnyújtás nem alkalmazható. Egy nyújtatlan kulcsokra alapozó 2010-es Giorgia Tech Research Institute-tanulmány legalább 12 karakter hosszúságú véletlenszerű jelszavakat javasolt. Az offline támadások megelőzése érdekében ajánlott szem előtt tartani, hogy a számítási teljesítmény folyamatos növekedésével párhuzamosan a szükséges entrópiabitek számának is növekednie kell.
 
 A felső korlát a titkosításhoz használt kulcsok kiválasztásának követelményein alapul. 1999-ben egy Electronic Frontier Foundation-projekt kevesebb mint egy nap alatt feltörte az 56 bites DES titkosítást egy erre a célra tervezett hardver segítségével. 2002-re a distributed.net – 4 év, 9 hónap és 23 nap alatt – feltört egy 64 bites kulcsot. Egy 2012. október 12-i distributed.net-becslés szerint egy 72 bites kulcs feltörése akkori hardverekkel 45 479 napig, azaz 124,8 évig tartott volna. A jelenlegi ismereteink szerinti alapvető fizikai korlátok miatt nem várható, hogy bármilyen digitális számítógép vagy hálózat kimerítő kereséssel fel tudjon törni 256 bites titkosítást. Még nem ismert, hogy a kvantumszámítógépek a gyakorlatban képesek lesznek-e erre; az elmélet nem zárja ki ezt az eshetőséget.
 
@@ -134,16 +140,412 @@ Hat Diceware szó használata ~77,549 bit jelszóentrópiát jelent; mindennapi 
 
 #### A szóhosszak valószínűségi eloszlása
 
-Jelölje L valószínűségi változó egy, a lista 2. verziójáról véletlenszerűen választott szó hosszát. L valószínűségi eloszlása a következő:
+Jelölje $`L`$ valószínűségi változó egy, a lista 2. verziójáról véletlenszerűen választott szó hosszát. $`L`$ valószínűségi eloszlása a következő:
 
-- P(L = 2) = ? / ? ≈ ? = ?%
-- P(L = 3) =
-- P(L = 4) =
-- P(L = 5) =
-- P(L = 6) =
+```math
+P(L < 2) = 0
+```
+
+```math
+P(L = 2) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(L = 3) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(L = 4) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(L = 5) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(L = 6) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(L > 6) = 0
+```
 
 #### A minimális összbetűszám követelményét nem teljesítő jelmondat készítésének esélye
 
 TODO
 
 #### A betűk valószínűségi eloszlása
+
+Legyen $`L_1`$ annak a 35 betűnek a halmaza, amelyek egy 2. verziójú lista használatával készített, nem feldíszített Diceware-jelmondatban szerepelhetnek. Ezek a kiterjesztett magyar ábécé kisbetűi a két- és háromjegyű betűk (‘cs’, ‘dz’, ‘dzs’, ‘gy’, ‘ly’, ‘ny’, ‘sz’, ‘ty’, ‘zs’) kivételével:
+
+```math
+L_1 = \{ \mathrm{a}, \mathrm{á}, \mathrm{b}, \mathrm{c}, \mathrm{d}, \mathrm{e}, \mathrm{é}, \mathrm{f}, \mathrm{g}, \mathrm{h}, \mathrm{i}, \mathrm{í}, \mathrm{j}, \mathrm{k}, \mathrm{l}, \mathrm{m}, \mathrm{n}, \mathrm{o}, \mathrm{ó}, \mathrm{ö}, \mathrm{ő}, \mathrm{p}, \mathrm{q}, \mathrm{r}, \mathrm{s}, \mathrm{t}, \mathrm{u}, \mathrm{ú}, \mathrm{ü}, \mathrm{ű}, \mathrm{v}, \mathrm{w}, \mathrm{x}, \mathrm{y}, \mathrm{z} \}
+```
+
+Legyen $`i_1`$ az a függvény, amely $`L_1`$ elemeihez azok számszerű elhelyezkedését rendeli hozzá $`L_1`$ magyar ábécé szerint rendezett felsorolásában:
+
+```math
+i_1(\mathrm{a}) = 1,
+```
+
+```math
+i_1(\mathrm{á}) = 2,
+```
+
+```math
+\ldots
+```
+
+```math
+i_1(\mathrm{z}) = 35.
+```
+
+Legyen $`l \in L_1`$ egy, a 2. verziójú listáról véletlenszerűen választott betű, és jelölje $`X_1`$ azt a valószínűségi változót, amely értéke $`i_1(l)`$. $`X_1`$ valószínűségi eloszlása a következő:
+
+```math
+P(X_1 < i_1(\mathrm{a})) = 0
+```
+
+```math
+P(X_1 = i_1(\mathrm{a})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{á})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{b})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{c})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{d})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{e})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{é})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{f})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{g})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{h})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{i})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{í})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{j})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{k})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{l})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{m})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{n})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{o})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{ó})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{ö})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{ő})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{p})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{q})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{r})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{s})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{t})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{u})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{ú})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{ü})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{ű})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{v})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{w})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{x})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{y})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 = i_1(\mathrm{z})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_1 > i_1(\mathrm{z})) = 0
+```
+
+Legyen $`H_1`$ $`X_1`$ entrópiája bitekben:
+
+```math
+H_1 := H(X_1) = - \sum_{l \in L_1} P(X_1 = i_1(l)) \log_2 P(X_1 = i_1(l)) \approx TODO~\mathrm{bit}
+```
+
+Legyen $`L_2`$ annak a 26 betűnek a halmaza, amelyek egy 2. verziójú lista használatával készített, nem feldíszített Diceware-jelmondatban szerepelhetnek, ha az ékezetes betűket ékezet nélküliekre cseréljük a következő szabályok szerint (a ‘>’ jel jelöli a cserét): ‘á’ > ‘a’, ‘é’ > ‘e’, ‘í’ > ‘i’, ‘ó’ > ‘o’, ‘ö’ > ‘o’, ‘ő’ > ‘o’, ‘ú’ > ‘u’, ‘ü’ > ‘u’, ‘ű’ > ‘u’. Ezek az angol ábécé kisbetűi:
+
+```math
+L_2 = \{ \mathrm{a}, \mathrm{b}, \mathrm{c}, \mathrm{d}, \mathrm{e}, \mathrm{f}, \mathrm{g}, \mathrm{h}, \mathrm{i}, \mathrm{j}, \mathrm{k}, \mathrm{l}, \mathrm{m}, \mathrm{n}, \mathrm{o}, \mathrm{p}, \mathrm{q}, \mathrm{r}, \mathrm{s}, \mathrm{t}, \mathrm{u}, \mathrm{v}, \mathrm{w}, \mathrm{x}, \mathrm{y}, \mathrm{z} \}
+```
+
+Legyen $`i_2`$ az a függvény, amely $`L_2`$ elemeihez azok számszerű elhelyezkedését rendeli hozzá $`L_2`$ ábécé szerint rendezett felsorolásában:
+
+```math
+i_2(\mathrm{a}) = 1,
+```
+
+```math
+i_2(\mathrm{b}) = 2,
+```
+
+```math
+\ldots
+```
+
+```math
+i_2(\mathrm{z}) = 26.
+```
+
+Legyen $`l \in L_2`$ egy, a 2. verziójú listáról véletlenszerűen választott betű, ha az ékezetes betűket ékezet nélküliekre cseréljük a fenti szabályok szerint, és jelölje $`X_2`$ azt a valószínűségi változót, amely értéke $`i_2(l)`$. $`X_2`$ valószínűségi eloszlása a következő:
+
+```math
+P(X_2 < i_2(\mathrm{a})) = 0
+```
+
+```math
+P(X_2 = i_2(\mathrm{a})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{b})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{c})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{d})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{e})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{f})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{g})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{h})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{i})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{j})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{k})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{l})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{m})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{n})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{o})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{p})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{q})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{r})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{s})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{t})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{u})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{v})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{w})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{x})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{y})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 = i_2(\mathrm{z})) = \frac{TODO}{TODO} \approx TODO = TODO\%
+```
+
+```math
+P(X_2 > i_2(\mathrm{z})) = 0
+```
+
+Legyen $`H_2`$ $`X_2`$ entrópiája bitekben:
+
+```math
+H_2 := H(X_2) = - \sum_{l \in L_2} P(X_2 = i_2(l)) \log_2 P(X_2 = i_2(l)) \approx TODO~\mathrm{bit}
+```
+
+### Miért a minimális összbetűszám követelmény? Diceware-jelmondatok, mint karakterláncok
+
+Ahogyan azt fentebb láthattuk, a magas jelszóentrópia két hozzávalója:
+
+- egy nagyméretű szimbólumkészlet,
+- sok szimbólum felhasználása a jelszóban.
+
+A Diceware nagyméretű szimbólumkészlettel dolgozik: a szimbólumai a Diceware szólistán szereplő 7776 szó. Ezzel szemben például egy kisbetű-nagybetű érzékeny latin alfanumerikus jelszó egy mindössze 62 elemből álló szimbólumkészletből épül fel (26 kis-, 26 nagybetű és 10 szám). A Diceware a nagyméretű szimbólumkészletének köszönhetően kevesebb szimbólum (szó) felhasználásával is magas entrópiájú jelszavakat készít.
+
+A minimális összbetűszám követelménye abból adódik, hogy nem szeretnénk biztonságot veszíteni pusztán amiatt, mert úgy tekintünk a Diceware-jelmondatunkra, mintha az egy adott Diceware-szólistán előforduló, független karakterek lánca lenne. Nem szeretnénk kevésbé biztonságban tudni az adatainkat akkor sem, ha egy támadó – annak tudatában, hogy egy adott szólistával Diceware-t használunk – úgy dönt, hogy nem szavanként, hanem karakterenként próbálja meg feltörni a jelszavunkat kimerítő kereséssel, az általunk használt szólistán szereplő karakterek valószínűségi eloszlása alapján. Ezt úgy biztosíthatjuk, ha legalább annyi „karakteralapú” entrópiája ($`H_\mathrm{C}`$) van a jelmondatunknak, mint „szóalapú” entrópiája ($`H_\mathrm{W}`$):
+
+```math
+H_\mathrm{C} \geq H_\mathrm{W}.
+```
+
+Egy $`W`$ szót tartalmazó Diceware-jelmondat „szóalapú” entrópiabitjeinek számát a $`H_\mathrm{W} = W \cdot \log_2 7776`$ képlet adja meg. Egy Diceware-jelmondat „karakteralapú” entrópiabitjeinek számát a legrosszabb esetben (ha nem választjuk el a szavakat a jelmondatban és nem is díszítjük fel azt) a $`H_\mathrm{C} = L \cdot H_\mathrm{c}`$ képlet adja meg, ahol $`L`$ a Diceware-szólistáról kiválasztott szavakban lévő betűk száma összesen, $`H_\mathrm{c}`$ pedig a használt Diceware szólista betűnkénti entrópiabitjeinek száma.
+
+A fenti képleteket behelyettesítve az egyenlőtlenségbe:
+
+```math
+L \cdot H_\mathrm{c} \geq W \cdot \log_2 7776.
+```
+
+$`L`$-re átrendezve az egyenlőtlenséget, meghatározható a minimális összbetűszám annak érdekében, hogy ne veszítsünk biztonságot:
+
+```math
+L \geq \frac{W \cdot \log_2 7776}{H_\mathrm{c}}.
+```
+
+A fenti egyenlőtlenséget egyenletként kifejezve kapunk egy explicit képletet a minimális összbetűszám kiszámításához:
+
+```math
+L_\mathrm{min} = \left\lceil \frac{W \cdot \log_2{7776}}{H_\mathrm{c}} \right\rceil,
+```
+
+ahol a $`\lceil~\rceil`$ a matematikai felső egészrész függvényt jelöli (azaz azt a $`c`$ függvényt, amit a következő képlet definiál: $`c(x) = \min \{ y \in \mathbb{Z} \mid y \geq x \} \quad (x \in \mathbb{R})`$), $`W`$ és $`H_\mathrm{c}`$ pedig ugyanazt, mint fentebb.
+
+A 2. verziójú lista $`H_\mathrm{c}`$ értéke $`H_1 \approx TODO~\mathrm{bit}`$ ékezetes betűk használata esetén, és $`H_2 \approx TODO~\mathrm{bit}`$ ékezet nélküli betűk használata esetén.
+
+Az $`L_\mathrm{min}`$ értékeit $`5 \leq W \leq 20`$, illetve $`H_\mathrm{c} = H_1`$ és $`H_\mathrm{c} = H_2`$ esetén a „Hogyan használjuk?” bekezdésben található táblázat tartalmazza.
+
+Megjegyezzük, hogy a gyakorlatban valószínűleg pusztán a szavak elválasztása is elégséges további „karakteralapú” entrópiát biztosít ahhoz, hogy egy, a minimális összbetűszám követelményt egyébként nem teljesítő jelmondat biztonságát ne gyengítse. Mindemellett továbbra is ajánlott betartani a minimális összbetűszám követelményt (illetve legalább hatszavas jelmondatokat készíteni, és feldíszíteni azt kis- és nagybetűkkel és nem-alfabetikus karakterekkel).
+
+## Felhasznált források:
+
+- [https://theworld.com/~reinhold/diceware.html](https://theworld.com/~reinhold/diceware.html)
+- [https://en.wikipedia.org/wiki/Diceware](https://en.wikipedia.org/wiki/Diceware)
+- [https://en.wikipedia.org/wiki/Password_strength](https://en.wikipedia.org/wiki/Password_strength)
+- [https://en.wikipedia.org/wiki/Entropy\_(information_theory)](<https://en.wikipedia.org/wiki/Entropy_(information_theory)>)
