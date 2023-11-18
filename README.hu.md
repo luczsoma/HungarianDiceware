@@ -515,7 +515,7 @@ A minimális összbetűszám követelménye abból adódik, hogy nem szeretnénk
 H_\mathrm{C} \geq H_\mathrm{W}.
 ```
 
-Egy $`W`$ szót tartalmazó Diceware-jelmondat „szóalapú” entrópiabitjeinek számát a $`H_\mathrm{W} = W \cdot \log_2 7776`$ képlet adja meg. Egy Diceware-jelmondat „karakteralapú” entrópiabitjeinek számát a legrosszabb esetben (ha nem választjuk el a szavakat a jelmondatban és nem is díszítjük fel azt) a $`H_\mathrm{C} = L \cdot H_\mathrm{c}`$ képlet adja meg, ahol $`L`$ a Diceware-szólistáról kiválasztott szavakban lévő betűk száma összesen, $`H_\mathrm{c}`$ pedig a használt Diceware szólista betűnkénti entrópiabitjeinek száma.
+Egy $`W`$ szót tartalmazó Diceware-jelmondat „szóalapú” entrópiabitjeinek számát a $`H_\mathrm{W} = W \cdot \log_2 7776`$ képlet adja meg. Egy Diceware-jelmondat „karakteralapú” entrópiabitjeinek számát a legrosszabb esetben (ha nem választjuk el a szavakat a jelmondatban és nem is díszítjük fel azt) a $`H_\mathrm{C} = L \cdot H_\mathrm{c}`$ képlet adja meg, ahol $`L`$ a Diceware-szólistáról kiválasztott szavakban lévő betűk száma összesen, $`H_\mathrm{c}`$ pedig a felhasznált Diceware szólista betűnkénti entrópiabitjeinek száma.
 
 A fenti képleteket behelyettesítve az egyenlőtlenségbe:
 
