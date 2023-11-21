@@ -350,7 +350,7 @@ P(X_1 = i_1(\mathrm{z})) = \frac{TODO}{TODO} \approx TODO = TODO\%
 P(X_1 > i_1(\mathrm{z})) = 0
 ```
 
-Legyen $`H_1`$ $`X_1`$ entrópiája bitekben:
+Legyen $`H_1`$ $`X_1`$ bitekben kifejezett entrópiája:
 
 ```math
 H_1 := H(X_1) = - \sum_{l \in L_1} P(X_1 = i_1(l)) \log_2 P(X_1 = i_1(l)) \approx TODO~\mathrm{bit}
@@ -494,7 +494,7 @@ P(X_2 = i_2(\mathrm{z})) = \frac{TODO}{TODO} \approx TODO = TODO\%
 P(X_2 > i_2(\mathrm{z})) = 0
 ```
 
-Legyen $`H_2`$ $`X_2`$ entrópiája bitekben:
+Legyen $`H_2`$ $`X_2`$ bitekben kifejezett entrópiája:
 
 ```math
 H_2 := H(X_2) = - \sum_{l \in L_2} P(X_2 = i_2(l)) \log_2 P(X_2 = i_2(l)) \approx TODO~\mathrm{bit}
