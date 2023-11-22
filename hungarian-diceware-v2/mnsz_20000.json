@@ -10966,599 +10966,748 @@
   },
   {
     "word": "bevisz",
-    "frequency": 2151
+    "frequency": 2151,
+    "exclude": false
   },
   {
     "word": "city",
-    "frequency": 2151
+    "frequency": 2151,
+    "exclude": true
   },
   {
     "word": "faggat",
-    "frequency": 2150
+    "frequency": 2150,
+    "exclude": false
   },
   {
     "word": "jóslat",
-    "frequency": 2150
+    "frequency": 2150,
+    "exclude": false
   },
   {
     "word": "alcím",
-    "frequency": 2149
+    "frequency": 2149,
+    "exclude": false
   },
   {
     "word": "bika",
-    "frequency": 2148
+    "frequency": 2148,
+    "exclude": false
   },
   {
     "word": "lökés",
-    "frequency": 2147
+    "frequency": 2147,
+    "exclude": false
   },
   {
     "word": "fűtés",
-    "frequency": 2145
+    "frequency": 2145,
+    "exclude": false
   },
   {
     "word": "kösz",
-    "frequency": 2142
+    "frequency": 2142,
+    "exclude": false
   },
   {
     "word": "tör",
-    "frequency": 2141
+    "frequency": 2141,
+    "exclude": false
   },
   {
     "word": "varjú",
-    "frequency": 2141
+    "frequency": 2141,
+    "exclude": false
   },
   {
     "word": "népdal",
-    "frequency": 2135
+    "frequency": 2135,
+    "exclude": false
   },
   {
     "word": "kardos",
-    "frequency": 2134
+    "frequency": 2134,
+    "exclude": false
   },
   {
     "word": "padlás",
-    "frequency": 2134
+    "frequency": 2134,
+    "exclude": false
   },
   {
     "word": "bajor",
-    "frequency": 2131
+    "frequency": 2131,
+    "exclude": false
   },
   {
     "word": "cseléd",
-    "frequency": 2129
+    "frequency": 2129,
+    "exclude": false
   },
   {
     "word": "rím",
-    "frequency": 2129
+    "frequency": 2129,
+    "exclude": false
   },
   {
     "word": "sógor",
-    "frequency": 2129
+    "frequency": 2129,
+    "exclude": false
   },
   {
     "word": "zsíros",
-    "frequency": 2128
+    "frequency": 2128,
+    "exclude": false
   },
   {
     "word": "alom",
-    "frequency": 2127
+    "frequency": 2127,
+    "exclude": false
   },
   {
     "word": "beáll",
-    "frequency": 2122
+    "frequency": 2122,
+    "exclude": false
   },
   {
     "word": "kurzus",
-    "frequency": 2122
+    "frequency": 2122,
+    "exclude": false
   },
   {
     "word": "csaj",
-    "frequency": 2120
+    "frequency": 2120,
+    "exclude": false
   },
   {
     "word": "barom",
-    "frequency": 2117
+    "frequency": 2117,
+    "exclude": false
   },
   {
     "word": "csere",
-    "frequency": 2115
+    "frequency": 2115,
+    "exclude": false
   },
   {
     "word": "farag",
-    "frequency": 2113
+    "frequency": 2113,
+    "exclude": false
   },
   {
     "word": "felold",
-    "frequency": 2109
+    "frequency": 2109,
+    "exclude": false
   },
   {
     "word": "kering",
-    "frequency": 2109
+    "frequency": 2109,
+    "exclude": false
   },
   {
     "word": "tömör",
-    "frequency": 2108
+    "frequency": 2108,
+    "exclude": false
   },
   {
     "word": "zeng",
-    "frequency": 2108
+    "frequency": 2108,
+    "exclude": false
   },
   {
     "word": "bejár",
-    "frequency": 2106
+    "frequency": 2106,
+    "exclude": false
   },
   {
     "word": "adalék",
-    "frequency": 2104
+    "frequency": 2104,
+    "exclude": false
   },
   {
     "word": "kitölt",
-    "frequency": 2104
+    "frequency": 2104,
+    "exclude": false
   },
   {
     "word": "épség",
-    "frequency": 2102
+    "frequency": 2102,
+    "exclude": false
   },
   {
     "word": "flóra",
-    "frequency": 2101
+    "frequency": 2101,
+    "exclude": false
   },
   {
     "word": "kísérő",
-    "frequency": 2100
+    "frequency": 2100,
+    "exclude": false
   },
   {
     "word": "törpe",
-    "frequency": 2099
+    "frequency": 2099,
+    "exclude": false
   },
   {
     "word": "csésze",
-    "frequency": 2098
+    "frequency": 2098,
+    "exclude": false
   },
   {
     "word": "pék",
-    "frequency": 2097
+    "frequency": 2097,
+    "exclude": false
   },
   {
     "word": "címszó",
-    "frequency": 2095
+    "frequency": 2095,
+    "exclude": false
   },
   {
     "word": "átél",
-    "frequency": 2092
+    "frequency": 2092,
+    "exclude": false
   },
   {
     "word": "tor",
-    "frequency": 2090
+    "frequency": 2090,
+    "exclude": false
   },
   {
     "word": "tündér",
-    "frequency": 2089
+    "frequency": 2089,
+    "exclude": false
   },
   {
     "word": "túsz",
-    "frequency": 2084
+    "frequency": 2084,
+    "exclude": false
   },
   {
     "word": "sérült",
-    "frequency": 2083
+    "frequency": 2083,
+    "exclude": false
   },
   {
     "word": "feszül",
-    "frequency": 2081
+    "frequency": 2081,
+    "exclude": false
   },
   {
     "word": "tender",
-    "frequency": 2076
+    "frequency": 2076,
+    "exclude": false
   },
   {
     "word": "vigasz",
-    "frequency": 2070
+    "frequency": 2070,
+    "exclude": false
   },
   {
     "word": "felüli",
-    "frequency": 2068
+    "frequency": 2068,
+    "exclude": false
   },
   {
     "word": "líceum",
-    "frequency": 2067
+    "frequency": 2067,
+    "exclude": false
   },
   {
     "word": "leáll",
-    "frequency": 2063
+    "frequency": 2063,
+    "exclude": false
   },
   {
     "word": "vétség",
-    "frequency": 2063
+    "frequency": 2063,
+    "exclude": false
   },
   {
     "word": "kasza",
-    "frequency": 2062
+    "frequency": 2062,
+    "exclude": false
   },
   {
     "word": "jószág",
-    "frequency": 2057
+    "frequency": 2057,
+    "exclude": false
   },
   {
     "word": "magzat",
-    "frequency": 2055
+    "frequency": 2055,
+    "exclude": false
   },
   {
     "word": "kivon",
-    "frequency": 2051
+    "frequency": 2051,
+    "exclude": false
   },
   {
     "word": "tuti",
-    "frequency": 2051
+    "frequency": 2051,
+    "exclude": false
   },
   {
     "word": "alföld",
-    "frequency": 2050
+    "frequency": 2050,
+    "exclude": false
   },
   {
     "word": "kímél",
-    "frequency": 2049
+    "frequency": 2049,
+    "exclude": false
   },
   {
     "word": "dohány",
-    "frequency": 2047
+    "frequency": 2047,
+    "exclude": false
   },
   {
     "word": "elnéz",
-    "frequency": 2042
+    "frequency": 2042,
+    "exclude": false
   },
   {
     "word": "becsap",
-    "frequency": 2041
+    "frequency": 2041,
+    "exclude": false
   },
   {
     "word": "hón",
-    "frequency": 2040
+    "frequency": 2040,
+    "exclude": false
   },
   {
     "word": "jókedv",
-    "frequency": 2040
+    "frequency": 2040,
+    "exclude": false
   },
   {
     "word": "pecsét",
-    "frequency": 2040
+    "frequency": 2040,
+    "exclude": false
   },
   {
     "word": "rezsim",
-    "frequency": 2040
+    "frequency": 2040,
+    "exclude": false
   },
   {
     "word": "junior",
-    "frequency": 2038
+    "frequency": 2038,
+    "exclude": true
   },
   {
     "word": "kori",
-    "frequency": 2038
+    "frequency": 2038,
+    "exclude": false
   },
   {
     "word": "dió",
-    "frequency": 2034
+    "frequency": 2034,
+    "exclude": false
   },
   {
     "word": "huszár",
-    "frequency": 2034
+    "frequency": 2034,
+    "exclude": false
   },
   {
     "word": "újít",
-    "frequency": 2034
+    "frequency": 2034,
+    "exclude": false
   },
   {
     "word": "nyilas",
-    "frequency": 2033
+    "frequency": 2033,
+    "exclude": false
   },
   {
     "word": "kinéz",
-    "frequency": 2032
+    "frequency": 2032,
+    "exclude": false
   },
   {
     "word": "rág",
-    "frequency": 2031
+    "frequency": 2031,
+    "exclude": false
   },
   {
     "word": "lobogó",
-    "frequency": 2031
+    "frequency": 2031,
+    "exclude": false
   },
   {
     "word": "gumi",
-    "frequency": 2029
+    "frequency": 2029,
+    "exclude": false
   },
   {
     "word": "jogcím",
-    "frequency": 2029
+    "frequency": 2029,
+    "exclude": false
   },
   {
     "word": "afgán",
-    "frequency": 2026
+    "frequency": 2026,
+    "exclude": false
   },
   {
     "word": "lusta",
-    "frequency": 2025
+    "frequency": 2025,
+    "exclude": false
   },
   {
     "word": "zúg",
-    "frequency": 2025
+    "frequency": 2025,
+    "exclude": false
   },
   {
     "word": "etet",
-    "frequency": 2021
+    "frequency": 2021,
+    "exclude": false
   },
   {
     "word": "nádas",
-    "frequency": 2021
+    "frequency": 2021,
+    "exclude": false
   },
   {
     "word": "nevelő",
-    "frequency": 2021
+    "frequency": 2021,
+    "exclude": false
   },
   {
     "word": "szeg",
-    "frequency": 2021
+    "frequency": 2021,
+    "exclude": false
   },
   {
     "word": "alapú",
-    "frequency": 2019
+    "frequency": 2019,
+    "exclude": false
   },
   {
     "word": "akna",
-    "frequency": 2016
+    "frequency": 2016,
+    "exclude": false
   },
   {
     "word": "letét",
-    "frequency": 2014
+    "frequency": 2014,
+    "exclude": false
   },
   {
     "word": "skála",
-    "frequency": 2013
+    "frequency": 2013,
+    "exclude": false
   },
   {
     "word": "névnap",
-    "frequency": 2012
+    "frequency": 2012,
+    "exclude": false
   },
   {
     "word": "végzet",
-    "frequency": 2011
+    "frequency": 2011,
+    "exclude": false
   },
   {
     "word": "vízum",
-    "frequency": 2010
+    "frequency": 2010,
+    "exclude": false
   },
   {
     "word": "levált",
-    "frequency": 2008
+    "frequency": 2008,
+    "exclude": false
   },
   {
     "word": "szigor",
-    "frequency": 2006
+    "frequency": 2006,
+    "exclude": false
   },
   {
     "word": "ötös",
-    "frequency": 2004
+    "frequency": 2004,
+    "exclude": false
   },
   {
     "word": "iráni",
-    "frequency": 2002
+    "frequency": 2002,
+    "exclude": false
   },
   {
     "word": "ring",
-    "frequency": 2000
+    "frequency": 2000,
+    "exclude": false
   },
   {
     "word": "bors",
-    "frequency": 1998
+    "frequency": 1998,
+    "exclude": false
   },
   {
     "word": "kamra",
-    "frequency": 1998
+    "frequency": 1998,
+    "exclude": false
   },
   {
     "word": "szekta",
-    "frequency": 1998
+    "frequency": 1998,
+    "exclude": false
   },
   {
     "word": "szörny",
-    "frequency": 1998
+    "frequency": 1998,
+    "exclude": false
   },
   {
     "word": "fóka",
-    "frequency": 1997
+    "frequency": 1997,
+    "exclude": false
   },
   {
     "word": "leplez",
-    "frequency": 1997
+    "frequency": 1997,
+    "exclude": false
   },
   {
     "word": "hihet",
-    "frequency": 1996
+    "frequency": 1996,
+    "exclude": false
   },
   {
     "word": "komló",
-    "frequency": 1996
+    "frequency": 1996,
+    "exclude": false
   },
   {
     "word": "szeles",
-    "frequency": 1995
+    "frequency": 1995,
+    "exclude": false
   },
   {
     "word": "csilla",
-    "frequency": 1994
+    "frequency": 1994,
+    "exclude": false
   },
   {
     "word": "tágas",
-    "frequency": 1992
+    "frequency": 1992,
+    "exclude": false
   },
   {
     "word": "lebont",
-    "frequency": 1990
+    "frequency": 1990,
+    "exclude": false
   },
   {
     "word": "addigi",
-    "frequency": 1989
+    "frequency": 1989,
+    "exclude": false
   },
   {
     "word": "erkély",
-    "frequency": 1988
+    "frequency": 1988,
+    "exclude": false
   },
   {
     "word": "sertés",
-    "frequency": 1986
+    "frequency": 1986,
+    "exclude": false
   },
   {
     "word": "mór",
-    "frequency": 1978
+    "frequency": 1978,
+    "exclude": false
   },
   {
     "word": "tiszti",
-    "frequency": 1977
+    "frequency": 1977,
+    "exclude": false
   },
   {
     "word": "vagon",
-    "frequency": 1977
+    "frequency": 1977,
+    "exclude": false
   },
   {
     "word": "faragó",
-    "frequency": 1976
+    "frequency": 1976,
+    "exclude": false
   },
   {
     "word": "életév",
-    "frequency": 1974
+    "frequency": 1974,
+    "exclude": false
   },
   {
     "word": "tű",
-    "frequency": 1974
+    "frequency": 1974,
+    "exclude": false
   },
   {
     "word": "bombáz",
-    "frequency": 1972
+    "frequency": 1972,
+    "exclude": false
   },
   {
     "word": "elöl",
-    "frequency": 1971
+    "frequency": 1971,
+    "exclude": false
   },
   {
     "word": "irónia",
-    "frequency": 1971
+    "frequency": 1971,
+    "exclude": false
   },
   {
     "word": "lelő",
-    "frequency": 1968
+    "frequency": 1968,
+    "exclude": false
   },
   {
     "word": "megvon",
-    "frequency": 1966
+    "frequency": 1966,
+    "exclude": false
   },
   {
     "word": "fajtáj",
-    "frequency": 1964
+    "frequency": 1964,
+    "exclude": false
   },
   {
     "word": "festék",
-    "frequency": 1964
+    "frequency": 1964,
+    "exclude": false
   },
   {
     "word": "hőség",
-    "frequency": 1963
+    "frequency": 1963,
+    "exclude": false
   },
   {
     "word": "aktus",
-    "frequency": 1960
+    "frequency": 1960,
+    "exclude": false
   },
   {
     "word": "szakos",
-    "frequency": 1960
+    "frequency": 1960,
+    "exclude": false
   },
   {
     "word": "néhai",
-    "frequency": 1959
+    "frequency": 1959,
+    "exclude": false
   },
   {
     "word": "lead",
-    "frequency": 1956
+    "frequency": 1956,
+    "exclude": false
   },
   {
     "word": "oldali",
-    "frequency": 1953
+    "frequency": 1953,
+    "exclude": false
   },
   {
     "word": "kecske",
-    "frequency": 1949
+    "frequency": 1949,
+    "exclude": false
   },
   {
     "word": "kellék",
-    "frequency": 1949
+    "frequency": 1949,
+    "exclude": false
   },
   {
     "word": "dühös",
-    "frequency": 1948
+    "frequency": 1948,
+    "exclude": false
   },
   {
     "word": "tábori",
-    "frequency": 1948
+    "frequency": 1948,
+    "exclude": false
   },
   {
     "word": "társul",
-    "frequency": 1946
+    "frequency": 1946,
+    "exclude": false
   },
   {
     "word": "ötéves",
-    "frequency": 1945
+    "frequency": 1945,
+    "exclude": false
   },
   {
     "word": "évszak",
-    "frequency": 1943
+    "frequency": 1943,
+    "exclude": false
   },
   {
     "word": "kerti",
-    "frequency": 1942
+    "frequency": 1942,
+    "exclude": false
   },
   {
     "word": "tapad",
-    "frequency": 1942
+    "frequency": 1942,
+    "exclude": false
   },
   {
     "word": "fura",
-    "frequency": 1940
+    "frequency": 1940,
+    "exclude": false
   },
   {
     "word": "villám",
-    "frequency": 1940
+    "frequency": 1940,
+    "exclude": false
   },
   {
     "word": "karom",
-    "frequency": 1937
+    "frequency": 1937,
+    "exclude": false
   },
   {
     "word": "görbe",
-    "frequency": 1937
+    "frequency": 1937,
+    "exclude": false
   },
   {
     "word": "tiszai",
-    "frequency": 1936
+    "frequency": 1936,
+    "exclude": false
   },
   {
     "word": "hon",
-    "frequency": 1935
+    "frequency": 1935,
+    "exclude": false
   },
   {
     "word": "pofon",
-    "frequency": 1934
+    "frequency": 1934,
+    "exclude": false
   },
   {
     "word": "légtér",
-    "frequency": 1932
+    "frequency": 1932,
+    "exclude": false
   },
   {
     "word": "kamasz",
-    "frequency": 1931
+    "frequency": 1931,
+    "exclude": false
   },
   {
     "word": "éppoly",
-    "frequency": 1930
+    "frequency": 1930,
+    "exclude": false
   },
   {
     "word": "gondos",
